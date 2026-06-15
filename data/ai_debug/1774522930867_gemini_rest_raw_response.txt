@@ -1,0 +1,30 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{\n  \"candidate_summary\": \"@Trupack демонстрирует хороший общий профессиональный потенциал (79.7/100) и высокий потенциал для IT-сферы (82.8/100) с высокой уверенностью в оценке (89.1% и 92.4% соответственно). Кандидат проявил(а) выдающиеся когнитивные способности, достигнув максимальных"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "MAX_TOKENS",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 47385,
+    "candidatesTokenCount": 92,
+    "totalTokenCount": 49970,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 47385
+      }
+    ],
+    "thoughtsTokenCount": 2493
+  },
+  "modelVersion": "gemini-2.5-flash",
+  "responseId": "JRLFaZGqGfb2nsEPmJLF2Ag"
+}

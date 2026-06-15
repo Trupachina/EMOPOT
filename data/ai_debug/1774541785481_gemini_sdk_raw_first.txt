@@ -1,0 +1,24 @@
+{
+  "candidate_summary": "@Trupack показал высокий общий профессиональный fit (80.8%) и высокий IT-fit (82.9%) с высокой надёжностью вывода (87.6%). Сильные стороны включают Числовое, Абстрактное, Пространственное мышление и Планирование. Также выражены Коммуникация и Ценности. Рекомендуется ИТ / аналитический трек.",
+  "overall_assessment": {
+    "general_fit_level": "high",
+    "it_fit_level": "high",
+    "confidence": 87.6,
+    "follow_up_needed": true,
+    "follow_up_reason": "Уточнение потенциала на практических заданиях, а также проверка склонности к социально желательным ответам."
+  },
+  "strengths": [
+    {
+      "name": "Числовое и Абстрактное мышление",
+      "evidence": "cognitiveRadar.numerical_reasoning (100.0), cognitiveRadar.abstract_reasoning (100.0), cognitiveAccuracy (100.0).",
+      "interpretation": "Кандидат демонстрирует выдающиеся способности к работе с числами, логикой и выявлению закономерностей."
+    },
+    {
+      "name": "Планирование и Пространственное мышление",
+      "evidence": "cognitiveRadar.planning (100.0), cognitiveRadar.spatial_reasoning (100.0), cognitiveAccuracy (100.0).",
+      "interpretation": "Высокие способности к структурированию задач, визуализации и решению многошаговых проблем."
+    },
+    {
+      "name": "Ориентация на ИТ и аналитику",
+      "evidence": "itFit (82.9), empRadar.it_career (77.1), EMP_CAR_04 (4), EMP_IT_01 (3), EMP_IT_05 (3), EMP_IT_07 (3).",
+      "interpretation": "Выраженный интерес к цифро

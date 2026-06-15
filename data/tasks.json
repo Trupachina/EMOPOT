@@ -5,107 +5,195 @@
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["арифметика", "устный_счет"],
+      "tags": [
+        "арифметика",
+        "устный_счет"
+      ],
       "type": "mcq",
       "title": "Чему равно 7×8?",
-      "options": ["52", "54", "56", "64"],
-      "correctIndex": 2
+      "options": [
+        "52",
+        "54",
+        "56",
+        "64"
+      ],
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     },
     {
       "id": "M2",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["геометрия_базовая"],
+      "tags": [
+        "геометрия_базовая"
+      ],
       "type": "mcq",
       "title": "Сумма внутренних углов треугольника равна…",
-      "options": ["90°", "180°", "270°", "360°"],
-      "correctIndex": 1
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "M3",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["корни", "квадраты"],
+      "tags": [
+        "корни",
+        "квадраты"
+      ],
       "type": "text",
       "title": "Чему равен корень из 144?",
-      "accept": ["12"]
+      "accept": [
+        "12"
+      ],
+      "controlType": "none"
     },
     {
       "id": "M4",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["дроби", "десятичные_дроби"],
+      "tags": [
+        "дроби",
+        "десятичные_дроби"
+      ],
       "type": "mcq",
       "title": "Во что преобразуется десятичное число 0,25 в виде обыкновенной дроби?",
-      "options": ["1/2", "1/3", "1/4", "2/5"],
-      "correctIndex": 2
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "2/5"
+      ],
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     },
     {
       "id": "M5",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 50,
-      "tags": ["производная", "анализ"],
+      "tags": [
+        "производная",
+        "анализ"
+      ],
       "type": "mcq",
       "title": "Производная функции f(x) = x² по x равна…",
-      "options": ["x", "2x", "x²", "2"],
-      "correctIndex": 1
+      "options": [
+        "x",
+        "2x",
+        "x²",
+        "2"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "M6",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["факториал", "остаток"],
+      "tags": [
+        "факториал",
+        "остаток"
+      ],
       "type": "text",
       "title": "Запишите две последние цифры числа 10! (факториал 10).",
-      "accept": ["00"]
+      "accept": [
+        "00"
+      ],
+      "controlType": "none"
     },
     {
       "id": "M7",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["среднее", "статистика_базовая"],
+      "tags": [
+        "среднее",
+        "статистика_базовая"
+      ],
       "type": "mcq",
       "title": "Чему равно среднее арифметическое чисел 2, 4 и 10?",
-      "options": ["4", "5", "6", "8"],
-      "correctIndex": 1
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "M8",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["число_пи", "аппроксимация"],
+      "tags": [
+        "число_пи",
+        "аппроксимация"
+      ],
       "type": "text",
       "title": "Запишите число π, округлённое до двух знаков после запятой.",
-      "accept": ["3.14", "3,14"]
+      "accept": [
+        "3.14",
+        "3,14"
+      ],
+      "controlType": "none"
     },
     {
       "id": "M9",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["уравнения", "линейные"],
+      "tags": [
+        "уравнения",
+        "линейные"
+      ],
       "type": "mcq",
       "title": "Какое из чисел является решением уравнения 3x − 7 = 11?",
-      "options": ["4", "5", "6", "7"],
-      "correctIndex": 2
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     },
     {
       "id": "M10",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 70,
-      "tags": ["комбинаторика", "исследовательские_команды"],
+      "tags": [
+        "комбинаторика",
+        "исследовательские_команды"
+      ],
       "type": "mcq",
       "title": "В лаборатории есть 5 ассистентов. Сколько различных пар ассистентов можно выбрать для совместной проверки отчёта?",
-      "options": ["5", "8", "10", "20"],
-      "correctIndex": 2
+      "options": [
+        "5",
+        "8",
+        "10",
+        "20"
+      ],
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     }
   ],
   "Логика": [
@@ -114,61 +202,112 @@
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["последовательности", "закономерности"],
+      "tags": [
+        "последовательности",
+        "закономерности"
+      ],
       "type": "mcq",
       "title": "Последовательность: 2, 4, 8, 16, … Какое число идёт далее, если правило последовательности сохраняется?",
-      "options": ["18", "24", "32", "34"],
-      "correctIndex": 2
+      "options": [
+        "18",
+        "24",
+        "32",
+        "34"
+      ],
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     },
     {
       "id": "L2",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["силлогизмы", "формальная_логика"],
+      "tags": [
+        "силлогизмы",
+        "формальная_логика"
+      ],
       "type": "mcq",
       "title": "Все студенты любопытны. Паша — студент. Какой логический вывод корректен?",
-      "options": ["Паша не любопытен", "Паша любопытен", "Неизвестно", "Утверждение неверно"],
-      "correctIndex": 1
+      "options": [
+        "Паша не любопытен",
+        "Паша любопытен",
+        "Неизвестно",
+        "Утверждение неверно"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "L3",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["анаграммы", "вербальная_логика"],
+      "tags": [
+        "анаграммы",
+        "вербальная_логика"
+      ],
       "type": "text",
       "title": "Назовите одно из слов, являющихся анаграммой слова «НОС».",
-      "accept": ["сон", "нос", "сно"]
+      "accept": [
+        "сон",
+        "нос",
+        "сно"
+      ],
+      "controlType": "none"
     },
     {
       "id": "L4",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 60,
-      "tags": ["календарная_логика", "модулярная_арифметика"],
+      "tags": [
+        "календарная_логика",
+        "модулярная_арифметика"
+      ],
       "type": "mcq",
       "title": "Если сегодня вторник, то через 100 дней будет…",
-      "options": ["четверг", "пятница", "суббота", "воскресенье"],
-      "correctIndex": 0
+      "options": [
+        "четверг",
+        "пятница",
+        "суббота",
+        "воскресенье"
+      ],
+      "correctIndex": 0,
+      "controlType": "none",
+      "expectedChoice": 0
     },
     {
       "id": "L5",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["классификация", "геометрические_фигуры"],
+      "tags": [
+        "классификация",
+        "геометрические_фигуры"
+      ],
       "type": "mcq",
       "title": "Что лишнее в ряду: квадрат, круг, треугольник, прямоугольник?",
-      "options": ["квадрат", "круг", "треугольник", "прямоугольник"],
-      "correctIndex": 1
+      "options": [
+        "квадрат",
+        "круг",
+        "треугольник",
+        "прямоугольник"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "L6",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["кванторы", "логика_высказываний"],
+      "tags": [
+        "кванторы",
+        "логика_высказываний"
+      ],
       "type": "mcq",
       "title": "Высказывание «Все кошки коричневые» — ложное. Какое из заключений логически верно?",
       "options": [
@@ -177,35 +316,56 @@
         "Ни одна кошка не коричневая",
         "Ничего нельзя сказать о цвете кошек"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "controlType": "none",
+      "expectedChoice": 0
     },
     {
       "id": "L7",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["геометрия", "воображение"],
+      "tags": [
+        "геометрия",
+        "воображение"
+      ],
       "type": "text",
       "title": "Сколько углов у пятиугольной звезды без пересечений линий?",
-      "accept": ["5"]
+      "accept": [
+        "5"
+      ],
+      "controlType": "none"
     },
     {
       "id": "L8",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 40,
-      "tags": ["последовательности", "фибоначчи"],
+      "tags": [
+        "последовательности",
+        "фибоначчи"
+      ],
       "type": "mcq",
       "title": "Последовательность 1, 1, 2, 3, 5, 8… — это ряд",
-      "options": ["гармонический", "Фибоначчи", "арифметический", "геометрический"],
-      "correctIndex": 1
+      "options": [
+        "гармонический",
+        "Фибоначчи",
+        "арифметический",
+        "геометрический"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "L9",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["логические_схемы", "контрпример"],
+      "tags": [
+        "логические_схемы",
+        "контрпример"
+      ],
       "type": "mcq",
       "title": "Высказывание: «Если студент сдал все экзамены, то он получит диплом летом». Какое утверждение является контрпримером к этому высказыванию?",
       "options": [
@@ -214,14 +374,19 @@
         "Студент не сдал ни одного экзамена и не получил диплом",
         "Студент не учится в университете"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "L10",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 70,
-      "tags": ["необходимость", "достаточность"],
+      "tags": [
+        "необходимость",
+        "достаточность"
+      ],
       "type": "mcq",
       "title": "Для того чтобы результат эксперимента считался воспроизводимым, необходимо, чтобы…",
       "options": [
@@ -230,7 +395,9 @@
         "эксперимент проводился только один раз",
         "результаты выглядели «убедительно» на графике"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     }
   ],
   "Анализ данных": [
@@ -239,50 +406,91 @@
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["медиана", "описательная_статистика"],
+      "tags": [
+        "медиана",
+        "описательная_статистика"
+      ],
       "type": "mcq",
       "title": "Чему равна медиана набора чисел 1, 3, 7?",
-      "options": ["1", "3", "5", "7"],
-      "correctIndex": 1
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "D2",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["мода", "описательная_статистика"],
+      "tags": [
+        "мода",
+        "описательная_статистика"
+      ],
       "type": "mcq",
       "title": "Чему равна мода набора 2, 2, 3, 4?",
-      "options": ["2", "3", "4", "нет моды"],
-      "correctIndex": 0
+      "options": [
+        "2",
+        "3",
+        "4",
+        "нет моды"
+      ],
+      "correctIndex": 0,
+      "controlType": "none",
+      "expectedChoice": 0
     },
     {
       "id": "D3",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["визуализация", "диаграммы"],
+      "tags": [
+        "визуализация",
+        "диаграммы"
+      ],
       "type": "mcq",
       "title": "Какой тип диаграммы удобнее использовать для сравнения долей категорий?",
-      "options": ["гистограмма", "круговая диаграмма", "линейный график", "ящик с усами"],
-      "correctIndex": 1
+      "options": [
+        "гистограмма",
+        "круговая диаграмма",
+        "линейный график",
+        "ящик с усами"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "D4",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["среднее", "описательная_статистика"],
+      "tags": [
+        "среднее",
+        "описательная_статистика"
+      ],
       "type": "text",
       "title": "Чему равно среднее арифметическое чисел 4 и 10?",
-      "accept": ["7", "7.0", "7,0"]
+      "accept": [
+        "7",
+        "7.0",
+        "7,0"
+      ],
+      "controlType": "none"
     },
     {
       "id": "D5",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["корреляция", "интерпретация"],
+      "tags": [
+        "корреляция",
+        "интерпретация"
+      ],
       "type": "mcq",
       "title": "Корреляция между двумя признаками близка к 0. Какое заключение наиболее корректно?",
       "options": [
@@ -291,14 +499,19 @@
         "обратная связь максимальна",
         "данные ошибочны"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "D6",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["логарифмическая_шкала", "визуализация"],
+      "tags": [
+        "логарифмическая_шкала",
+        "визуализация"
+      ],
       "type": "mcq",
       "title": "В какой ситуации логарифмическая шкала по оси наиболее полезна?",
       "options": [
@@ -307,35 +520,57 @@
         "когда данные нечётные",
         "логарифмическая шкала никогда не используется"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     },
     {
       "id": "D7",
       "mode": "base",
       "difficulty": 1,
       "timeRef": 45,
-      "tags": ["квартили", "описательная_статистика"],
+      "tags": [
+        "квартили",
+        "описательная_статистика"
+      ],
       "type": "text",
       "title": "На сколько частей квартили делят упорядоченную выборку?",
-      "accept": ["4", "четыре"]
+      "accept": [
+        "4",
+        "четыре"
+      ],
+      "controlType": "none"
     },
     {
       "id": "D8",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 60,
-      "tags": ["межквартильный_размах", "вариативность"],
+      "tags": [
+        "межквартильный_размах",
+        "вариативность"
+      ],
       "type": "mcq",
       "title": "IQR (interquartile range) — это…",
-      "options": ["размах", "значения квартилей", "межквартильный размах", "средняя ошибка"],
-      "correctIndex": 2
+      "options": [
+        "размах",
+        "значения квартилей",
+        "межквартильный размах",
+        "средняя ошибка"
+      ],
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     },
     {
       "id": "D9",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 70,
-      "tags": ["статистика", "разброс"],
+      "tags": [
+        "статистика",
+        "разброс"
+      ],
       "type": "mcq",
       "title": "Два набора данных имеют одинаковое среднее значение, но разные дисперсии. Что это означает?",
       "options": [
@@ -344,14 +579,19 @@
         "различается разброс значений вокруг среднего",
         "данные второго набора ошибочны"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "controlType": "none",
+      "expectedChoice": 2
     },
     {
       "id": "D10",
       "mode": "base",
       "difficulty": 2,
       "timeRef": 70,
-      "tags": ["выбросы", "графики"],
+      "tags": [
+        "выбросы",
+        "графики"
+      ],
       "type": "mcq",
       "title": "На ящике с усами (boxplot) отдельные точки находятся вдали от основного «ящика». Что это, скорее всего?",
       "options": [
@@ -360,7 +600,9 @@
         "обязательные точки медианы",
         "границы квартилей"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "controlType": "none",
+      "expectedChoice": 1
     }
   ],
   "Когнитивные карточки": [
@@ -371,17 +613,36 @@
       "cardImage": "/static/cards/fish_1.png",
       "difficulty": 2,
       "timeRef": 120,
-      "tags": ["числовые_закономерности", "абстрактное_мышление"],
+      "tags": [
+        "числовые_закономерности",
+        "абстрактное_мышление"
+      ],
       "type": "mcq",
       "title": "На карточке изображены пять рыбок с числовыми последовательностями. Четыре рыбки подчиняются одному правилу, одна — нет. Выберите лишнюю рыбку.",
       "options": [
         "Рыбка A: 2, 6, 18, 54",
         "Рыбка B: 3, 9, 27, 81",
-        "Рыбка C: 4, 12, 36, 108",
+        "Рыбка C: 4, 12, 36, 109",
         "Рыбка D: 5, 15, 45, 135",
         "Рыбка E: 6, 18, 54, 162"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "controlType": "none",
+      "cardAxisWeights": {
+        "numerical_reasoning": 0.55,
+        "abstract_reasoning": 0.3,
+        "planning": 0.15
+      },
+      "expectedChoice": 2,
+      "partialScoring": {
+        "near_miss": 0.5,
+        "random_guess": 0.0
+      },
+      "errorTags": [
+        "rule_misunderstood",
+        "impulsive_choice"
+      ],
+      "diagnosticPower": "medium"
     },
     {
       "id": "CARD_PLANETS_1",
@@ -390,10 +651,34 @@
       "cardImage": "/static/cards/planets_1.png",
       "difficulty": 2,
       "timeRef": 120,
-      "tags": ["делимость", "классификация", "логика_условий"],
+      "tags": [
+        "делимость",
+        "классификация",
+        "логика_условий"
+      ],
       "type": "text",
-      "title": "На карточке изображены планеты с числами. Планета считается обитаемой, если число на ней делится на 9, является квадратом или является простым. Впишите номера всех обитаемых планет через запятую в порядке возрастания.",
-      "accept": ["1,3,5", "1, 3, 5", "1 3 5", "135"]
+      "title": "На карточке изображены планеты с числами. Планета считается обитаемой, если число на ней ИЛИ делится на 9, ИЛИ является квадратом, ИЛИ является простым. Выберите номера всех обитаемых планет через запятую в порядке возрастания.",
+      "accept": [
+        "1,3,5",
+        "1, 3, 5",
+        "1 3 5",
+        "135"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "numerical_reasoning": 0.45,
+        "abstract_reasoning": 0.35,
+        "planning": 0.2
+      },
+      "partialScoring": {
+        "partial_match": 0.5,
+        "near_full": 0.75
+      },
+      "errorTags": [
+        "classification_gap",
+        "unfinished_solution"
+      ],
+      "diagnosticPower": "medium"
     },
     {
       "id": "CARD_CLOCK_1",
@@ -402,10 +687,35 @@
       "cardImage": "/static/cards/clock_1.png",
       "difficulty": 3,
       "timeRef": 180,
-      "tags": ["пространственное_мышление", "арифметика", "стратегия"],
+      "tags": [
+        "пространственное_мышление",
+        "арифметика",
+        "стратегия"
+      ],
       "type": "text",
       "title": "На карточке изображён круглый циферблат с числами от 1 до 12. Его разделили одной прямой линией на две части так, что сумма чисел в каждой части одинаковая. Определите эту сумму и впишите её числом.",
-      "accept": ["39", "39.0", "39,0"]
+      "accept": [
+        "39",
+        "39.0",
+        "39,0"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "spatial_reasoning": 0.45,
+        "numerical_reasoning": 0.35,
+        "planning": 0.2
+      },
+      "partialScoring": {
+        "correct_angle_wrong_sum": 0.75,
+        "equal_parts_without_sum": 0.5,
+        "wrong_angle_correct_sum": 0.5
+      },
+      "errorTags": [
+        "spatial_confusion",
+        "execution_error",
+        "premature_submit"
+      ],
+      "diagnosticPower": "high"
     },
     {
       "id": "CARD_WORD_LADDER_1",
@@ -414,10 +724,33 @@
       "cardImage": "/static/cards/word_ladder_lisa_nora.png",
       "difficulty": 3,
       "timeRef": 210,
-      "tags": ["вербальная_гибкость", "планирование", "логика_правил"],
+      "tags": [
+        "вербальная_гибкость",
+        "планирование",
+        "логика_правил"
+      ],
       "type": "text",
-      "title": "Постройте «лестницу слов» от ЛИСА до НОРА: на каждом шаге меняется ровно одна буква, и на каждом шаге должно получаться существующее русское слово. Впишите цепочку из шести слов (включая ЛИСА и НОРА) через стрелку.",
-      "accept": ["*"]
+      "title": "Постройте «лестницу слов» от ЛИСА до НОРА: на каждом шаге меняется ровно одна буква, и на каждом шаге должно получаться существующее русское слово. Впишите цепочку через стрелку в формате «ЛИСА -> ... -> НОРА».",
+      "accept": [
+        "*"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "verbal_reasoning": 0.6,
+        "abstract_reasoning": 0.2,
+        "planning": 0.2
+      },
+      "partialScoring": {
+        "one_transition_error": 0.75,
+        "valid_partial_chain": 0.5,
+        "start_end_only": 0.25
+      },
+      "errorTags": [
+        "rule_misunderstood",
+        "one_step_miss",
+        "unfinished_solution"
+      ],
+      "diagnosticPower": "high"
     },
     {
       "id": "CARD_ROBOT_1",
@@ -426,10 +759,37 @@
       "cardImage": "/static/cards/robot_1.png",
       "difficulty": 2,
       "timeRef": 120,
-      "tags": ["арифметика", "выражения", "подбор"],
+      "tags": [
+        "арифметика",
+        "выражения",
+        "подбор"
+      ],
       "type": "text",
       "title": "Робот-калькулятор сначала перемножает два введённых числа a и b (a·b), а затем из результата вычитает 5. Подберите пару целых положительных чисел (a, b), чтобы в итоге получилось 72, и запишите её в формате a,b.",
-      "accept": ["7,11", "11,7", "7, 11", "11, 7"]
+      "accept": [
+        "1,77",
+        "77,1",
+        "7,11",
+        "11,7",
+        "1, 77",
+        "77, 1",
+        "7, 11",
+        "11, 7"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "numerical_reasoning": 0.6,
+        "planning": 0.25,
+        "abstract_reasoning": 0.15
+      },
+      "partialScoring": {
+        "off_by_one_factor_pair": 0.5
+      },
+      "errorTags": [
+        "execution_error",
+        "unfinished_solution"
+      ],
+      "diagnosticPower": "medium"
     },
     {
       "id": "CARD_CUBE_1",
@@ -438,10 +798,36 @@
       "cardImage": "/static/cards/cube_nets_1.png",
       "difficulty": 3,
       "timeRef": 180,
-      "tags": ["пространственное_мышление", "воображение_3D"],
+      "tags": [
+        "пространственное_мышление",
+        "воображение_3D"
+      ],
       "type": "text",
-      "title": "На карточке изображены несколько развёрток куба с одинаковыми значками на гранях, отмеченных буквами А, Б, В, Г, Д. Выпишите буквы всех развёрток, из которых можно сложить куб с таким же расположением значков, как на образце.",
-      "accept": ["АВД", "А,В,Д", "А, В, Д", "ABD", "A,B,D"]
+      "title": "На карточке изображены несколько развёрток куба с одинаковыми значками на гранях, отмеченных буквами А, Б, В, Г, Д. Выберите все развёртки, из которых можно сложить куб с таким же расположением значков, как на образце.",
+      "accept": [
+        "АД",
+        "А,Д",
+        "А, Д",
+        "AD",
+        "A,D"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "spatial_reasoning": 0.7,
+        "abstract_reasoning": 0.15,
+        "planning": 0.15
+      },
+      "partialScoring": {
+        "two_of_three": 0.75,
+        "one_of_three": 0.25,
+        "one_false_positive_with_two_true": 0.5
+      },
+      "errorTags": [
+        "spatial_confusion",
+        "mirror_confusion",
+        "impulsive_choice"
+      ],
+      "diagnosticPower": "high"
     },
     {
       "id": "CARD_GRAPHS_1",
@@ -450,16 +836,35 @@
       "cardImage": "/static/cards/graphs_1.png",
       "difficulty": 2,
       "timeRef": 120,
-      "tags": ["графики", "интерпретация_данных"],
-      "type": "mcq",
-      "title": "На карточке изображены два графика зависимости количества прочитанных статей от времени (график A и график B). Какой график лучше описывает ситуацию «студент начинал читать мало, но к концу семестра резко увеличил количество прочитанных статей»?",
-      "options": [
-        "График A: рост почти линейный и равномерный",
-        "График B: в начале почти горизонтальный, затем резкий рост",
-        "Оба графика одинаково подходят",
-        "Ни один график не подходит"
+      "tags": [
+        "абстрактное_мышление",
+        "закономерности",
+        "символьная_матрица"
       ],
-      "correctIndex": 1
+      "type": "mcq",
+      "title": "На карточке изображена матрица из символов. В строках и столбцах элементы символа накапливаются по определённой закономерности. Какой вариант логично завершает матрицу?",
+      "options": [
+        "Вариант А: кольцо + диагональ + точка",
+        "Вариант Б: кольцо + диагональ + вертикальная линия + точка",
+        "Вариант В: кольцо + вертикальная линия + точка",
+        "Вариант Г: диагональ + вертикальная линия + точка"
+      ],
+      "correctIndex": 1,
+      "controlType": "none",
+      "cardAxisWeights": {
+        "abstract_reasoning": 0.55,
+        "pattern_recognition": 0.3,
+        "data_interpretation": 0.15
+      },
+      "expectedChoice": 1,
+      "partialScoring": {
+        "near_pattern": 0.25
+      },
+      "errorTags": [
+        "pattern_misread",
+        "partial_rule_capture"
+      ],
+      "diagnosticPower": "medium"
     },
     {
       "id": "CARD_ROUTE_1",
@@ -468,10 +873,34 @@
       "cardImage": "/static/cards/route_1.png",
       "difficulty": 2,
       "timeRef": 120,
-      "tags": ["планирование", "пространственное_мышление"],
+      "tags": [
+        "планирование",
+        "пространственное_мышление"
+      ],
       "type": "text",
       "title": "На карточке изображён план кампуса в виде сетки. Нужно пройти от общежития до лаборатории, двигаясь только по клеткам вверх, вниз, влево или вправо, не проходя через препятствия. Впишите минимальное количество шагов, за которое можно добраться до лаборатории.",
-      "accept": ["8", "8.0", "8,0"]
+      "accept": [
+        "8",
+        "8.0",
+        "8,0"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "planning": 0.5,
+        "spatial_reasoning": 0.3,
+        "abstract_reasoning": 0.2
+      },
+      "partialScoring": {
+        "plus_one_step": 0.75,
+        "plus_two_or_three_steps": 0.5,
+        "clearly_suboptimal": 0.25
+      },
+      "errorTags": [
+        "spatial_confusion",
+        "planning_gap",
+        "unfinished_solution"
+      ],
+      "diagnosticPower": "high"
     },
     {
       "id": "CARD_BALANCE_1",
@@ -480,10 +909,32 @@
       "cardImage": "/static/cards/shapes_equation_1.png",
       "difficulty": 2,
       "timeRef": 120,
-      "tags": ["арифметика", "геометрические_фигуры", "закономерности"],
+      "tags": [
+        "арифметика",
+        "геометрические_фигуры",
+        "закономерности"
+      ],
       "type": "text",
       "title": "На карточке изображены четыре строки с геометрическими фигурами. В первых трёх строках квадраты, цепочки треугольников и пары шестиугольников образуют равенства. В последней строке нарисованы один шестиугольник, один квадрат и один отдельный треугольник. Используя первые три равенства, вычислите значение последнего выражения и впишите его числом.",
-      "accept": ["18", "18.0", "18,0"]
+      "accept": [
+        "12",
+        "12.0",
+        "12,0"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "numerical_reasoning": 0.45,
+        "abstract_reasoning": 0.4,
+        "planning": 0.15
+      },
+      "partialScoring": {
+        "one_intermediate_value_wrong": 0.5
+      },
+      "errorTags": [
+        "rule_misunderstood",
+        "execution_error"
+      ],
+      "diagnosticPower": "medium"
     },
     {
       "id": "CARD_PATTERN_1",
@@ -492,10 +943,1196 @@
       "cardImage": "/static/cards/pattern_1.png",
       "difficulty": 3,
       "timeRef": 180,
-      "tags": ["абстрактное_мышление", "закономерности"],
+      "tags": [
+        "абстрактное_мышление",
+        "закономерности"
+      ],
       "type": "text",
       "title": "На карточке изображена матрица 3×3 из фигур и чисел, в которой каждая строка и каждый столбец подчиняются определённому правилу. Одна ячейка помечена знаком вопроса. Опираясь на закономерности, впишите число или символ, который должен стоять вместо вопросительного знака.",
-      "accept": ["8", "8.0", "8,0"]
+      "accept": [
+        "8",
+        "8.0",
+        "8,0"
+      ],
+      "controlType": "none",
+      "cardAxisWeights": {
+        "abstract_reasoning": 0.6,
+        "numerical_reasoning": 0.2,
+        "planning": 0.2
+      },
+      "partialScoring": {
+        "one_rule_caught": 0.5,
+        "near_miss": 0.75
+      },
+      "errorTags": [
+        "abstraction_gap",
+        "execution_error"
+      ],
+      "diagnosticPower": "high"
+    },
+    {
+      "id": "CARD_SPATIAL_ROT_1",
+      "mode": "card",
+      "subtype": "shape_rotation_match",
+      "cardImage": "/static/cards/spatial_rotation_1.png",
+      "difficulty": 3,
+      "timeRef": 150,
+      "tags": [
+        "пространственное_мышление",
+        "ментальное_вращение",
+        "визуальные_преобразования"
+      ],
+      "type": "mcq",
+      "title": "На карточке показан образец фигуры из блоков. Какой вариант получится, если мысленно повернуть фигуру на 90° против часовой стрелки без отражения?",
+      "options": [
+        "Вариант А",
+        "Вариант Б",
+        "Вариант В",
+        "Вариант Г"
+      ],
+      "correctIndex": 0,
+      "expectedChoice": 0,
+      "controlType": "none",
+      "cardAxisWeights": {
+        "spatial_reasoning": 0.72,
+        "planning": 0.13,
+        "abstract_reasoning": 0.15
+      },
+      "partialScoring": {
+        "1": 0.5,
+        "2": 0.25
+      }
+    },
+    {
+      "id": "CARD_TOP_VIEW_1",
+      "mode": "card",
+      "subtype": "tower_top_view_match",
+      "cardImage": "/static/cards/tower_top_view_1.png",
+      "difficulty": 3,
+      "timeRef": 160,
+      "tags": [
+        "пространственное_мышление",
+        "вид_сверху",
+        "структурное_мышление"
+      ],
+      "type": "mcq",
+      "title": "На карточке показан вид сверху. Выберите конструкцию из кубиков, которая даёт именно такой след сверху.",
+      "options": [
+        "Вариант А",
+        "Вариант Б",
+        "Вариант В",
+        "Вариант Г"
+      ],
+      "correctIndex": 3,
+      "expectedChoice": 0,
+      "controlType": "none",
+      "cardAxisWeights": {
+        "spatial_reasoning": 0.65,
+        "planning": 0.2,
+        "abstract_reasoning": 0.15
+      },
+      "partialScoring": {
+        "2": 0.5
+      }
+    },
+    {
+      "id": "CARD_CUBE_REVERSE_1",
+      "mode": "card",
+      "subtype": "cube_from_net_select",
+      "cardImage": "/static/cards/cube_from_net_1.png",
+      "difficulty": 3,
+      "timeRef": 170,
+      "tags": [
+        "пространственное_мышление",
+        "развёртки_куба",
+        "воображение_3D"
+      ],
+      "type": "mcq",
+      "title": "На карточке показана одна развёртка куба со значками на гранях. Выберите куб, который можно сложить из этой развёртки.",
+      "options": [
+        "Вариант А",
+        "Вариант Б",
+        "Вариант В",
+        "Вариант Г"
+      ],
+      "correctIndex": 0,
+      "expectedChoice": 0,
+      "controlType": "none",
+      "cardAxisWeights": {
+        "spatial_reasoning": 0.7,
+        "abstract_reasoning": 0.15,
+        "planning": 0.15
+      },
+      "partialScoring": {
+        "1": 0.5,
+        "2": 0.25
+      }
+    }
+  ],
+  "ЭМП: Мотивация": [
+    {
+      "id": "EMP_MOT_01",
+      "mode": "survey",
+      "block": "emp_motivation",
+      "instrument": "achievement_motivation",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне важно добиваться высокого результата, даже если задача сложнее обычного.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "achievement_drive": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_MOT_02",
+      "mode": "survey",
+      "block": "emp_motivation",
+      "instrument": "achievement_motivation",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Если задание может не получиться, мне легче отложить его, чем рискнуть и попробовать.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "failure_avoidance": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_MOT_03",
+      "mode": "survey",
+      "block": "emp_motivation",
+      "instrument": "achievement_motivation",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне нравится ставить себе планку выше минимально необходимой.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "achievement_drive": 1,
+        "growth_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_MOT_04",
+      "mode": "survey",
+      "block": "emp_motivation",
+      "instrument": "achievement_motivation",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Я быстро теряю мотивацию, если не вижу мгновенного результата.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "persistence": 1
+      },
+      "reverse": true,
+      "timeRef": 25,
+      "controlType": "none"
+    }
+  ],
+  "ЭМП: Коммуникация": [
+    {
+      "id": "EMP_COM_01",
+      "mode": "survey",
+      "block": "emp_communication",
+      "instrument": "communication_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне легко начать обсуждение с незнакомой командой, если это нужно для работы.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "communication": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_COM_02",
+      "mode": "survey",
+      "block": "emp_communication",
+      "instrument": "communication_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Когда в команде возникает напряжение, я стараюсь сначала понять позицию другой стороны.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "empathy": 1,
+        "teamwork": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_COM_03",
+      "mode": "survey",
+      "block": "emp_communication",
+      "instrument": "communication_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Если я не согласен с решением группы, я предпочитаю промолчать, даже если вижу риск.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "assertive_communication": 1
+      },
+      "reverse": true,
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_COM_04",
+      "mode": "survey",
+      "block": "emp_communication",
+      "instrument": "communication_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне комфортно согласовывать задачи и держать в курсе участников команды.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "teamwork": 1,
+        "communication": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    }
+  ],
+  "ЭМП: Саморегуляция": [
+    {
+      "id": "EMP_REG_01",
+      "mode": "survey",
+      "block": "emp_self_regulation",
+      "instrument": "self_regulation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Перед началом работы я обычно быстро определяю последовательность шагов.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "planning": 1,
+        "self_regulation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_REG_02",
+      "mode": "survey",
+      "block": "emp_self_regulation",
+      "instrument": "self_regulation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Даже если задача затянулась, я обычно довожу её до конца, а не бросаю на середине.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "persistence": 1,
+        "self_regulation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_REG_03",
+      "mode": "survey",
+      "block": "emp_self_regulation",
+      "instrument": "self_regulation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Если что-то пошло не по плану, мне трудно быстро перестроиться.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "adaptability": 1
+      },
+      "reverse": true,
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_REG_04",
+      "mode": "survey",
+      "block": "emp_self_regulation",
+      "instrument": "self_regulation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Я обычно контролирую качество результата ещё до завершения задания.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "self_control": 1,
+        "self_regulation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    }
+  ],
+  "ЭМП: Карьерная направленность": [
+    {
+      "id": "EMP_CAR_01",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "career_orientation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне интереснее углубляться в экспертизу и становиться сильным специалистом, чем просто координировать других.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "professional_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_CAR_02",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "career_orientation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне нравится искать новые решения и экспериментировать даже там, где нет очевидного шаблона.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "innovation_orientation": 1,
+        "it_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_CAR_03",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "career_orientation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне важнее стабильность и понятные правила, чем быстрые изменения и неопределённость.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "stability_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_CAR_04",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "career_orientation_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Задачи, связанные с ИТ, данными и цифровыми продуктами, мне действительно интересны.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "it_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_01",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне интересно разбираться, почему система работает именно так, а не просто пользоваться готовым результатом.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "technical_curiosity": 1,
+        "analytical_interest": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_02",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Если я вижу сложную, но логичную задачу, мне скорее интересно её раскрутить шаг за шагом, чем отказаться сразу.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "debugging_persistence": 1,
+        "iterative_problem_solving": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_03",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне комфортно работать по формальным правилам и ограничениям, если они помогают получить точный результат.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "formal_system_comfort": 1,
+        "process_discipline": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_04",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Когда в задаче остаётся неопределённость, я обычно могу продолжать исследовать варианты, не теряя рабочий ритм.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "ambiguity_tolerance": 1,
+        "iterative_problem_solving": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_05",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне легче сохранять интерес к задаче, если нужно заметить закономерность или скрытое правило.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "analytical_interest": 1,
+        "it_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_06",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Если что-то не работает, мне часто хочется найти причину сбоя и проверить гипотезы, а не просто перейти к другой задаче.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "debugging_persistence": 1,
+        "technical_curiosity": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_07",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне ближе задачи, где нужно выстраивать систему или алгоритм, чем задачи, где главное — свободное самовыражение без структуры.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "formal_system_comfort": 1,
+        "preference_people_vs_systems": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_IT_08",
+      "mode": "survey",
+      "block": "emp_career_orientation",
+      "instrument": "it_affinity_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне проще долго концентрироваться на одной логической проблеме, чем постоянно переключаться между эмоционально насыщенными задачами общения.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "preference_people_vs_systems": 1,
+        "process_discipline": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    }
+  ],
+  "ЭМП: Ценности": [
+    {
+      "id": "EMP_VAL_01",
+      "mode": "survey",
+      "block": "emp_values",
+      "instrument": "values_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Для меня важно, чтобы результат моей работы был полезен людям, а не только формально выполнен.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "meaning_orientation": 1,
+        "user_value_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_VAL_02",
+      "mode": "survey",
+      "block": "emp_values",
+      "instrument": "values_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Даже под давлением сроков для меня важно действовать честно и прозрачно по отношению к команде.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "ethical_orientation": 1,
+        "responsibility": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_VAL_03",
+      "mode": "survey",
+      "block": "emp_values",
+      "instrument": "values_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "В работе мне важнее постоянное развитие и обучение, чем быстрый внешний статус.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "learning_value": 1,
+        "growth_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    },
+    {
+      "id": "EMP_VAL_04",
+      "mode": "survey",
+      "block": "emp_values",
+      "instrument": "values_profile",
+      "itemType": "survey_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Для меня принципиально важны уважение, экологичное общение и безопасная атмосфера в команде.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "team_values": 1,
+        "respect_orientation": 1
+      },
+      "timeRef": 25,
+      "controlType": "none"
+    }
+  ],
+  "ЭМП: Контроль": [
+    {
+      "id": "EMP_CTL_01",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "attention_check",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Контроль внимательности: для этого пункта выберите вариант «Скорее не про меня».",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "scaleKey": {
+        "attention_check": 1
+      },
+      "timeRef": 15,
+      "controlType": "attention_check",
+      "expectedChoice": 1
+    },
+    {
+      "id": "EMP_CTL_02",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "attention_check",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Контроль внимательности: в этом пункте выберите вариант «Скорее про меня».",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "scaleKey": {
+        "attention_check": 1
+      },
+      "timeRef": 15,
+      "controlType": "attention_check",
+      "expectedChoice": 3
+    },
+    {
+      "id": "EMP_CTL_03",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "social_desirability",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Я никогда не допускаю ошибок, даже когда работаю с новой для себя задачей.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "social_desirability": 1
+      },
+      "timeRef": 20,
+      "controlType": "social_desirability",
+      "expectedChoice": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "EMP_CTL_04",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "social_desirability",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Мне одинаково легко работать с любыми людьми и в любых условиях без необходимости адаптироваться.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "social_desirability": 1
+      },
+      "timeRef": 20,
+      "controlType": "social_desirability",
+      "expectedChoice": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "EMP_CTL_05",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "social_desirability",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Я сохраняю одинаково высокий уровень концентрации и продуктивности в любой ситуации, даже если устал(а) или работаю в непривычных условиях.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "social_desirability": 1
+      },
+      "timeRef": 20,
+      "controlType": "social_desirability",
+      "expectedChoice": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "EMP_CTL_06",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "consistency_check",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Когда в задаче несколько шагов, я обычно удерживаю первоначальный план, пока не появляется новая важная информация.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "consistency_check": 1
+      },
+      "timeRef": 22,
+      "controlType": "consistency_check",
+      "consistencyPair": "plan_tracking"
+    },
+    {
+      "id": "EMP_CTL_07",
+      "mode": "survey",
+      "block": "emp_control",
+      "instrument": "consistency_check",
+      "itemType": "control_item",
+      "responseModel": "survey",
+      "type": "mcq",
+      "title": "Даже без новых данных я часто резко меняю способ решения и теряю исходный план по ходу работы.",
+      "options": [
+        "Совсем не про меня",
+        "Скорее не про меня",
+        "Частично про меня",
+        "Скорее про меня",
+        "Полностью про меня"
+      ],
+      "optionScores": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scaleKey": {
+        "consistency_check": 1
+      },
+      "timeRef": 22,
+      "controlType": "consistency_check",
+      "consistencyPair": "plan_tracking",
+      "reverse": true
     }
   ]
 }

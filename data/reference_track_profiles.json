@@ -1,0 +1,200 @@
+{
+  "version": "emopot_internship_routing_v1",
+  "description": "Эталонные профили профессиональных ИТ-стажировок для сопоставления с цифровым профилем сотрудника.",
+  "tracks": {
+    "qa_testing": {
+      "label": "QA / тестирование",
+      "shortLabel": "QA",
+      "description": "Трек для задач проверки, воспроизведения сценариев, поиска ошибок и контроля качества.",
+      "trackAxisWeights": {
+        "attention": 1.25,
+        "response_stability": 1.2,
+        "planning": 1.1,
+        "persistence": 1.0,
+        "self_regulation": 0.9,
+        "data_interpretation": 0.7
+      },
+      "requiredMinima": {
+        "attention": 65,
+        "response_stability": 60,
+        "planning": 55
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 45, "penalty": 12, "severity": "critical", "message": "низкое качество данных ограничивает прямую рекомендацию"},
+        {"axis": "skip_tendency", "operator": "gt", "threshold": 30, "penalty": 8, "severity": "high", "message": "высокая доля пропусков нежелательна для трека QA"}
+      ],
+      "format": "Структурированная стажировка с чек-листами, понятными критериями качества и регулярной обратной связью.",
+      "mentorNeedLevel": "medium",
+      "adaptationNeedLevel": "medium"
+    },
+    "data_bi_analytics": {
+      "label": "Data / BI / аналитика",
+      "shortLabel": "Data / BI",
+      "description": "Трек для работы с данными, таблицами, метриками, визуализацией и объяснением аналитических выводов.",
+      "trackAxisWeights": {
+        "data_interpretation": 1.35,
+        "numerical_reasoning": 1.25,
+        "abstract_reasoning": 1.1,
+        "learning_value": 1.0,
+        "planning": 0.9,
+        "persistence": 0.8
+      },
+      "requiredMinima": {
+        "data_interpretation": 60,
+        "numerical_reasoning": 55,
+        "abstract_reasoning": 55
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 45, "penalty": 12, "severity": "critical", "message": "низкое качество данных снижает достоверность аналитического профиля"}
+      ],
+      "format": "Аналитическая стажировка с практическими кейсами, наставником и постепенным усложнением задач.",
+      "mentorNeedLevel": "high",
+      "adaptationNeedLevel": "medium"
+    },
+    "product_project_support": {
+      "label": "Product / project support",
+      "shortLabel": "Product / project",
+      "description": "Трек для поддержки продуктовых и проектных задач, координации, коммуникации и работы с требованиями.",
+      "trackAxisWeights": {
+        "communication": 1.25,
+        "self_regulation": 1.15,
+        "planning": 1.15,
+        "responsibility": 1.0,
+        "response_stability": 0.85,
+        "learning_value": 0.8
+      },
+      "requiredMinima": {
+        "communication": 60,
+        "planning": 55,
+        "self_regulation": 55
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 45, "penalty": 10, "severity": "critical", "message": "недостаточное качество данных требует дооценки перед проектной рекомендацией"}
+      ],
+      "format": "Проектно-координационная стажировка с участием в сопровождении задач и короткими циклами обратной связи.",
+      "mentorNeedLevel": "medium",
+      "adaptationNeedLevel": "medium"
+    },
+    "technical_support_implementation": {
+      "label": "Technical support / implementation",
+      "shortLabel": "Support / implementation",
+      "description": "Трек для прикладной технической поддержки, внедрения, разбора пользовательских обращений и сопровождения решений.",
+      "trackAxisWeights": {
+        "response_stability": 1.2,
+        "communication": 1.15,
+        "learning_value": 1.1,
+        "responsibility": 1.0,
+        "attention": 0.95,
+        "self_regulation": 0.9
+      },
+      "requiredMinima": {
+        "communication": 55,
+        "response_stability": 55,
+        "learning_value": 55
+      },
+      "blockerRules": [
+        {"axis": "skip_tendency", "operator": "gt", "threshold": 35, "penalty": 7, "severity": "high", "message": "частые пропуски снижают готовность к поддержке пользователей"}
+      ],
+      "format": "Прикладная стажировка с пошаговым вводом, типовыми сценариями, чек-листами и поддержкой наставника.",
+      "mentorNeedLevel": "medium",
+      "adaptationNeedLevel": "high"
+    },
+    "ux_research_user_insights": {
+      "label": "UX research / user insights",
+      "shortLabel": "UX research",
+      "description": "Трек для исследования пользовательского опыта, интервью, наблюдения, структурирования инсайтов и передачи выводов команде.",
+      "trackAxisWeights": {
+        "empathy": 1.25,
+        "communication": 1.2,
+        "verbal_reasoning": 1.1,
+        "observation": 1.0,
+        "structured_explanation": 0.9,
+        "self_regulation": 0.75
+      },
+      "requiredMinima": {
+        "communication": 60,
+        "verbal_reasoning": 55,
+        "empathy": 55
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 45, "penalty": 10, "severity": "critical", "message": "низкое качество данных ограничивает вывод о коммуникативном профиле"}
+      ],
+      "format": "Исследовательская стажировка в малой команде с акцентом на интервью, наблюдение и оформление выводов.",
+      "mentorNeedLevel": "high",
+      "adaptationNeedLevel": "medium"
+    },
+    "digital_process_automation": {
+      "label": "Digital process automation / no-code",
+      "shortLabel": "No-code / automation",
+      "description": "Трек для автоматизации процессов, no-code-инструментов, описания последовательностей и улучшения цифровых операций.",
+      "trackAxisWeights": {
+        "planning": 1.25,
+        "data_interpretation": 1.1,
+        "self_regulation": 1.05,
+        "process_orientation": 1.0,
+        "attention": 0.9,
+        "learning_value": 0.9
+      },
+      "requiredMinima": {
+        "planning": 55,
+        "process_orientation": 55,
+        "self_regulation": 50
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 45, "penalty": 10, "severity": "critical", "message": "недостаточное качество данных ограничивает вывод по процессному треку"}
+      ],
+      "format": "Практико-ориентированная стажировка по автоматизации процессов с небольшими прикладными заданиями.",
+      "mentorNeedLevel": "medium",
+      "adaptationNeedLevel": "medium"
+    },
+    "software_foundation": {
+      "label": "Software foundation internship",
+      "shortLabel": "Software foundation",
+      "description": "Базовый инженерный трек для освоения основ программирования, алгоритмического мышления и структуры технических задач.",
+      "trackAxisWeights": {
+        "abstract_reasoning": 1.3,
+        "planning": 1.15,
+        "numerical_reasoning": 1.1,
+        "learning_value": 1.05,
+        "persistence": 1.0,
+        "response_stability": 0.8
+      },
+      "requiredMinima": {
+        "abstract_reasoning": 60,
+        "planning": 55,
+        "learning_value": 55
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 45, "penalty": 12, "severity": "critical", "message": "низкое качество данных требует повторной проверки перед инженерным треком"},
+        {"axis": "skip_tendency", "operator": "gt", "threshold": 30, "penalty": 7, "severity": "high", "message": "высокая доля пропусков снижает готовность к инженерной программе"}
+      ],
+      "format": "Базовая инженерная программа с наставником, регулярной практикой и проверкой прогресса по шагам.",
+      "mentorNeedLevel": "high",
+      "adaptationNeedLevel": "high"
+    },
+    "adjacent_digital_track": {
+      "label": "Смежный цифровой трек",
+      "shortLabel": "Смежный цифровой",
+      "description": "Адаптационный цифровой трек для сотрудников с потенциалом к цифровым задачам без прямого входа в IT-core.",
+      "trackAxisWeights": {
+        "general_emp_fit": 1.2,
+        "digital_readiness": 1.1,
+        "process_discipline": 1.0,
+        "learning_value": 0.95,
+        "communication": 0.85,
+        "self_regulation": 0.85
+      },
+      "requiredMinima": {
+        "general_emp_fit": 50,
+        "digital_readiness": 45,
+        "process_discipline": 45
+      },
+      "blockerRules": [
+        {"axis": "data_quality", "operator": "lt", "threshold": 40, "penalty": 10, "severity": "critical", "message": "низкое качество данных требует дооценки даже для смежного цифрового трека"}
+      ],
+      "format": "Адаптационная стажировка в цифровой функции с мягким входом и прикладными задачами.",
+      "mentorNeedLevel": "medium",
+      "adaptationNeedLevel": "high"
+    }
+  }
+}

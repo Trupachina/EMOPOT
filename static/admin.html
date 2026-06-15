@@ -30,10 +30,7 @@
       color:var(--text);
       padding:20px;
     }
-    .wrap{
-      max-width:960px;
-      margin:0 auto;
-    }
+    .wrap{max-width:1120px;margin:0 auto}
     .card{
       background:var(--card);
       border-radius:var(--radius);
@@ -42,272 +39,137 @@
       margin:12px 0;
       border:1px solid rgba(15,23,42,.03);
     }
-    .top-row{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:12px;
-      flex-wrap:wrap;
-    }
+    .top-row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
     h1{margin:4px 0 2px;font-size:1.9rem;letter-spacing:.02em}
     h2{margin:0 0 4px}
     h3{margin:0 0 6px}
+    h4{margin:0 0 8px;font-size:1rem}
     .muted{color:var(--muted)}
     label{font-weight:600;font-size:.92rem;margin-right:6px}
     input[type="text"],input[type="number"]{
-      padding:10px 12px;
-      border-radius:12px;
-      border:1.5px solid #e3e9f5;
-      font-size:14px;
-      outline:none;
-      transition:border-color .15s, box-shadow .15s, background .15s;
-      background:#fdfdff;
+      padding:10px 12px;border-radius:12px;border:1.5px solid #e3e9f5;font-size:14px;outline:none;
+      transition:border-color .15s, box-shadow .15s, background .15s;background:#fdfdff;
     }
-    input[type="text"]:focus,
-    input[type="number"]:focus{
-      border-color:#c7d6ff;
-      box-shadow:0 0 0 4px #eaf0ff;
-      background:#ffffff;
+    input[type="text"]:focus,input[type="number"]:focus{
+      border-color:#c7d6ff;box-shadow:0 0 0 4px #eaf0ff;background:#ffffff;
     }
+    input[readonly], input:disabled{background:#f3f4f6;color:#64748b}
     .btn{
-      appearance:none;
-      border:0;
-      border-radius:12px;
-      padding:10px 14px;
-      background:var(--accent);
-      color:#fff;
-      font-weight:800;
-      cursor:pointer;
-      font-size:.9rem;
-      letter-spacing:.04em;
-      text-transform:uppercase;
-      box-shadow:0 10px 24px rgba(37,99,235,.35);
-      transition:transform .12s, box-shadow .12s, opacity .12s, background .12s;
+      appearance:none;border:0;border-radius:12px;padding:10px 14px;background:var(--accent);color:#fff;font-weight:800;
+      cursor:pointer;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;
+      box-shadow:0 10px 24px rgba(37,99,235,.35);transition:transform .12s, box-shadow .12s, opacity .12s, background .12s;
       white-space:nowrap;
     }
-    .btn:hover{
-      transform:translateY(-1px);
-      box-shadow:0 14px 32px rgba(37,99,235,.38);
-    }
-    .btn:active{
-      transform:translateY(1px);
-      box-shadow:0 6px 14px rgba(37,99,235,.25);
-    }
-    .btn:disabled{
-      opacity:.6;
-      cursor:not-allowed;
-      box-shadow:none;
-      transform:none;
-    }
-    .btn.ghost{
-      background:#fff;
-      color:var(--accent);
-      border:2px solid var(--accent);
-      box-shadow:none;
-      text-transform:none;
-      letter-spacing:0;
-    }
-    .btn.danger{
-      background:#fee2e2;
-      color:#b91c1c;
-      border:2px solid #fecaca;
-      box-shadow:none;
-      text-transform:none;
-      letter-spacing:0;
-    }
-    .row{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      flex-wrap:wrap;
-    }
-    .pill{
-      background:#eef2ff;
-      color:#1e3a8a;
-      border-radius:999px;
-      padding:6px 12px;
-      font-weight:800;
-      border:1px solid #c7d2fe;
-      font-size:.85rem;
-      white-space:nowrap;
-    }
-    .pill.mode-card{
-      background:#fef3c7;
-      color:#92400e;
-      border-color:#facc15;
-    }
-    .pill.status-lobby{
-      background:#ecfdf5;
-      color:#166534;
-      border-color:#bbf7d0;
-    }
-    .pill.status-running{
-      background:#eff6ff;
-      color:#1d4ed8;
-      border-color:#bfdbfe;
-    }
-    .pill.status-finished{
-      background:#fef2f2;
-      color:#b91c1c;
-      border-color:#fecaca;
-    }
-    .pill.timer{
-      background:#0f172a;
-      color:#fbbf24;
-      border-color:#111827;
-      font-variant-numeric:tabular-nums;
-      box-shadow:0 0 0 1px rgba(15,23,42,.7), 0 0 18px rgba(251,191,36,.4);
-    }
+    .btn:hover{transform:translateY(-1px);box-shadow:0 14px 32px rgba(37,99,235,.38)}
+    .btn:active{transform:translateY(1px);box-shadow:0 6px 14px rgba(37,99,235,.25)}
+    .btn:disabled{opacity:.6;cursor:not-allowed;box-shadow:none;transform:none}
+    .btn.ghost{background:#fff;color:var(--accent);border:2px solid var(--accent);box-shadow:none;text-transform:none;letter-spacing:0}
+    .btn.danger{background:#fee2e2;color:#b91c1c;border:2px solid #fecaca;box-shadow:none;text-transform:none;letter-spacing:0}
+    .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+    .pill{background:#eef2ff;color:#1e3a8a;border-radius:999px;padding:6px 12px;font-weight:800;border:1px solid #c7d2fe;font-size:.85rem;white-space:nowrap}
+    .pill.mode-card{background:#fef3c7;color:#92400e;border-color:#facc15}
+    .pill.status-lobby{background:#ecfdf5;color:#166534;border-color:#bbf7d0}
+    .pill.status-running{background:#eff6ff;color:#1d4ed8;border-color:#bfdbfe}
+    .pill.status-finished{background:#fef2f2;color:#b91c1c;border-color:#fecaca}
+    .pill.timer{background:#0f172a;color:#fbbf24;border-color:#111827;font-variant-numeric:tabular-nums;box-shadow:0 0 0 1px rgba(15,23,42,.7), 0 0 18px rgba(251,191,36,.4)}
     ul{margin:4px 0 0;padding-left:18px}
     li{margin:1px 0}
-    a.btn-link{
-      text-decoration:none;
-    }
-
-    .brand-mark{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-    }
-    .brand-logo{
-      width:32px;height:32px;border-radius:12px;
-      background:radial-gradient(circle at 25% 0,#f97316 0,#eab308 30%,#0ea5e9 70%,#1d4ed8 100%);
-      box-shadow:0 0 0 2px rgba(255,255,255,.9),0 10px 22px rgba(30,64,175,.55);
-      position:relative;
-      overflow:hidden;
-    }
-    .brand-logo::before{
-      content:'Σ';
-      position:absolute;
-      inset:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-weight:900;
-      color:#0b1120;
-    }
-
+    a.btn-link{text-decoration:none}
+    .brand-mark{display:inline-flex;align-items:center;gap:8px}
+    .brand-logo{width:32px;height:32px;border-radius:12px;background:radial-gradient(circle at 25% 0,#f97316 0,#eab308 30%,#0ea5e9 70%,#1d4ed8 100%);box-shadow:0 0 0 2px rgba(255,255,255,.9),0 10px 22px rgba(30,64,175,.55);position:relative;overflow:hidden}
+    .brand-logo::before{content:'Σ';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:900;color:#0b1120}
     .tagline{font-size:.95rem}
+    .badge-small{display:inline-flex;align-items:center;gap:4px;padding:2px 6px;border-radius:999px;font-size:.75rem;background:#eff6ff;color:#1d4ed8;border:1px solid #dbeafe}
+    .badge-small span.dot{width:6px;height:6px;border-radius:999px;background:#22c55e}
+    .section-title{font-size:.95rem;font-weight:600;margin-bottom:4px}
+    .q-preview{margin-top:8px;padding:10px 12px;border-radius:14px;background:#f9fafb;border:1px solid #e5e7eb;font-size:.9rem}
+    .q-extra{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;font-size:.8rem;color:var(--muted)}
+    .mini-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+    .hint-note{margin-top:8px;padding:10px 12px;border-radius:14px;background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;font-size:.84rem;line-height:1.4}
+    .toast{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);padding:10px 14px;background:#0f172a;color:#e5e7eb;border-radius:12px;opacity:.98;box-shadow:0 10px 26px rgba(15,23,42,.6);font-size:.88rem;max-width:90%;z-index:20}
+    .table-mini{width:100%;border-collapse:collapse;font-size:.86rem;margin-top:6px}
+    .table-mini th,.table-mini td{padding:6px 8px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:top}
+    .table-mini th{font-weight:600;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+    .pill-chip{display:inline-flex;align-items:center;padding:2px 6px;border-radius:999px;font-size:.75rem;background:#eef2ff;color:#3730a3;border:1px solid #e0e7ff}
 
-    .badge-small{
-      display:inline-flex;
-      align-items:center;
-      gap:4px;
-      padding:2px 6px;
-      border-radius:999px;
-      font-size:.75rem;
-      background:#eff6ff;
-      color:#1d4ed8;
-      border:1px solid #dbeafe;
-    }
-    .badge-small span.dot{
-      width:6px;height:6px;border-radius:999px;background:#22c55e;
-    }
-
-    .section-title{
-      font-size:.95rem;
-      font-weight:600;
-      margin-bottom:4px;
-    }
-
-    .q-preview{
-      margin-top:8px;
-      padding:10px 12px;
-      border-radius:14px;
-      background:#f9fafb;
-      border:1px solid #e5e7eb;
-      font-size:.9rem;
-    }
-    .q-extra{
-      display:flex;
-      flex-wrap:wrap;
-      gap:6px;
-      margin-top:6px;
-      font-size:.8rem;
-      color:var(--muted);
-    }
-
-    .mini-label{
-      font-size:.78rem;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      color:var(--muted);
-    }
-
-    .toast{
-      position:fixed;
-      left:50%;
-      bottom:16px;
-      transform:translateX(-50%);
-      padding:10px 14px;
-      background:#0f172a;
-      color:#e5e7eb;
-      border-radius:12px;
-      opacity:.98;
-      box-shadow:0 10px 26px rgba(15,23,42,.6);
-      font-size:.88rem;
-      max-width:90%;
-      z-index:20;
-    }
-
-    .table-mini{
-      width:100%;
-      border-collapse:collapse;
-      font-size:.86rem;
-      margin-top:6px;
-    }
-    .table-mini th,
-    .table-mini td{
-      padding:4px 6px;
-      border-bottom:1px solid #e5e7eb;
-      text-align:left;
-    }
-    .table-mini th{
-      font-weight:600;
-      color:var(--muted);
-      font-size:.8rem;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-    }
-    .pill-chip{
-      display:inline-flex;
-      align-items:center;
-      padding:2px 6px;
-      border-radius:999px;
-      font-size:.75rem;
-      background:#eef2ff;
-      color:#3730a3;
-      border:1px solid #e0e7ff;
-    }
+    .dash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:12px}
+    .dash-stat{border-radius:16px;background:linear-gradient(180deg,#ffffff,#f8fafc);border:1px solid #e5e7eb;padding:14px}
+    .dash-stat .k{font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:6px}
+    .dash-stat .v{font-size:1.25rem;font-weight:800}
+    .radar-admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+    .radar-panel{border:1px solid #e5e7eb;border-radius:16px;background:#fff;padding:12px;overflow:visible}
+    .radar-host{padding:8px 14px 16px;overflow:visible}
+    .radar-host svg{width:100%;height:auto;display:block;overflow:visible}
+    .players-admin-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.9rem}
+    .players-admin-table th,.players-admin-table td{padding:10px 12px;border-bottom:1px solid #e5e7eb;text-align:left;vertical-align:top}
+    .players-admin-table th{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+    .player-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:#eef2ff;color:#312e81;border:1px solid #c7d2fe;font-size:.82rem;font-weight:700;margin:3px 6px 0 0}
+    .detail-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:12px}
+    .detail-box{border:1px solid #e5e7eb;border-radius:16px;padding:14px;background:#fff}
+    .detail-box ul{margin:0;padding-left:18px}
+    .subgrid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .subgrid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .history-wrap{max-height:320px;overflow:auto;border:1px solid #e5e7eb;border-radius:14px;margin-top:12px}
+    .status-ok{color:#166534;font-weight:700}
+    .status-bad{color:#b91c1c;font-weight:700}
+    .status-mid{color:#b45309;font-weight:700}
+    .view-toggle{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .view-toggle .btn.active{box-shadow:0 0 0 2px rgba(37,99,235,.18) inset;background:#eff6ff;border-color:#93c5fd;color:#1d4ed8}
+    .ai-shell{display:none;margin-top:12px}
+    .ai-shell.show{display:block}
+    .ai-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+    .ai-actions{display:flex;gap:8px;flex-wrap:wrap}
+    .ai-card{background:linear-gradient(135deg,#f8fbff,#ffffff);border:1px solid #dbeafe;border-radius:16px;padding:14px;box-shadow:0 8px 24px rgba(37,99,235,.06)}
+    .ai-status{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;font-weight:700;font-size:.85rem;border:1px solid #dbeafe;background:#eff6ff;color:#1d4ed8}
+    .ai-status.empty{background:#f8fafc;border-color:#e5e7eb;color:#475569}
+    .ai-status.loading{background:#eff6ff;border-color:#bfdbfe;color:#1d4ed8}
+    .ai-status.ready{background:#ecfdf5;border-color:#bbf7d0;color:#15803d}
+    .ai-status.error{background:#fef2f2;border-color:#fecaca;color:#b91c1c}
+    .ai-progress{display:none;margin-top:12px;border:1px solid #dbeafe;border-radius:16px;padding:14px;background:#fff}
+    .ai-progress.show{display:block}
+    .ai-progressbar{height:12px;border-radius:999px;background:#e5e7eb;overflow:hidden;margin:10px 0 12px}
+    .ai-progressbar>span{display:block;height:100%;width:0%;background:linear-gradient(90deg,#60a5fa,#2563eb);transition:width .25s ease}
+    .ai-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:10px}
+    .ai-step{border:1px solid #e5e7eb;border-radius:14px;padding:12px;background:#f8fafc}
+    .ai-step.active{border-color:#93c5fd;background:#eff6ff}
+    .ai-step.done{border-color:#86efac;background:#f0fdf4}
+    .ai-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
+    .ai-metric{border:1px solid #dbeafe;border-radius:14px;padding:12px;background:#ffffff;min-width:0}
+    .ai-metric .k{font-size:.82rem;color:#64748b;margin-bottom:6px}
+    .ai-metric .v{font-size:1rem;font-weight:800;line-height:1.28;white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+    .ai-summary{margin-top:12px;line-height:1.6;white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+    .ai-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}
+    .ai-box h4{margin:0 0 8px}
+    .ai-foot{margin-top:12px;color:#475569;line-height:1.55;font-size:.94rem}
+    @media (max-width: 960px){.ai-columns{grid-template-columns:1fr}}
+    @media (max-width: 960px){.radar-admin-grid,.detail-grid,.subgrid-2,.subgrid-3{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 <div class="wrap">
   <div class="toast" id="toast" style="display:none"></div>
 
-  <!-- HEADER -->
   <div class="card">
     <div class="top-row">
       <div class="brand-mark">
         <div class="brand-logo"></div>
         <div>
           <h1>EMOPOT</h1>
-          <div class="tagline muted">Тест комплексной оценки потенциала абитуриента — панель администратора</div>
+          <div class="tagline muted">Мультимодальная диагностика ЭМП кандидатов в ИТ‑стажировки — панель администратора</div>
         </div>
       </div>
       <div class="pill">Режим: Администратор</div>
     </div>
     <div style="margin-top:8px;font-size:.9rem" class="muted">
-      Создайте комнату, наблюдайте за ходом выполнения заданий (включая когнитивные карточки) и выгружайте результаты в CSV.
+      Создайте комнату, наблюдайте за ходом выполнения заданий и после завершения открывайте HR-дашборд комнаты с групповыми радарами, поведенческими индикаторами и профилями игроков.
     </div>
   </div>
 
-  <!-- ROOM CONTROL -->
   <div class="card">
     <div class="section-title">Управление комнатой</div>
     <div class="row" style="margin-top:6px">
       <label for="rounds">Раундов:</label>
-      <input id="rounds" type="number" min="1" max="30" value="12" style="width:72px"/>
+      <input id="rounds" type="number" min="1" max="40" value="" style="width:78px"/>
       <button class="btn" id="btnCreate">Создать комнату</button>
 
       <label for="roomInput">Код:</label>
@@ -316,6 +178,9 @@
       <button class="btn ghost" id="btnAttach">Подключиться</button>
       <button class="btn" id="btnStart" style="display:none">Начать сессию</button>
       <button class="btn danger" id="btnEnd" style="display:none">Завершить сессию</button>
+    </div>
+    <div class="hint-note" id="roundsHint">
+      Для некоторых сценариев сервер сам формирует полный набор раундов из включённых блоков. В этих режимах число в поле «Раундов» используется только как визуальная настройка и фактически будет переопределено на сервере.
     </div>
     <div class="row" style="margin-top:10px">
       <div class="mini-label">Текущая комната</div>
@@ -327,43 +192,63 @@
     </div>
   </div>
 
-  <!-- TASK BANK -->
   <div class="card">
     <div class="top-row">
       <div>
         <div class="section-title">Банк заданий</div>
         <div class="muted" style="font-size:.86rem">
-          Поддерживаются базовые задачи и когнитивные карточки. Обновите файл <code>tasks.json</code> и перезагрузите банк.
+          Поддерживаются базовые задачи, когнитивные карточки, ЭМП-блоки и новые поведенческие метрики в итоговом профиле.
         </div>
       </div>
       <button class="btn ghost" id="btnReload">Перезагрузить tasks.json</button>
     </div>
     <div id="stats" class="muted" style="margin-top:8px;font-size:.9rem">Загрузка…</div>
 
-    <!-- БЛОК ФИЛЬТРА ЗАДАНИЙ -->
     <div style="margin-top:10px;font-size:.85rem">
-      <div class="mini-label">Фильтр заданий по типу</div>
+      <div class="mini-label">Сценарий оценки</div>
       <div class="row" style="margin-top:6px">
-        <label>
-          <input type="radio" name="taskMode" id="filterAll" checked/>
-          Все задания
-        </label>
-        <label>
-          <input type="radio" name="taskMode" id="filterCardsOnly"/>
-          Только когнитивные карточки
-        </label>
-        <label>
-          <input type="radio" name="taskMode" id="filterNoCards"/>
-          Без когнитивных карточек
-        </label>
+        <label><input type="radio" name="assessmentMode" id="modeEmpCore"/> EMOPOT Core + карточки</label>
+        <label><input type="radio" name="assessmentMode" id="modeCardsOnly"/> Только когнитивные карточки</label>
+        <label><input type="radio" name="assessmentMode" id="modeEmpFull" checked/> EMOPOT Full</label>
+        <label><input type="radio" name="assessmentMode" id="modeLegacy"/> Legacy</label>
+        <label><input type="radio" name="assessmentMode" id="modeCustom"/> Конструктор блоков</label>
       </div>
       <div class="muted" style="margin-top:4px;font-size:.78rem">
-        Параметр фильтра передается на сервер при создании комнаты и влияет на выбор задач в раундах.
+        Сценарий передаётся на сервер при создании комнаты и определяет, какие блоки участвуют в диагностике.
+      </div>
+    </div>
+
+    <div style="margin-top:12px;font-size:.85rem">
+      <div class="mini-label">Ожидание игроков внутри раунда</div>
+      <label style="display:inline-flex;align-items:center;gap:8px;margin-top:6px">
+        <input type="checkbox" id="waitForAllPlayers" checked/>
+        Дожидаться завершения раунда всеми игроками и показывать экран ожидания
+      </label>
+      <div class="muted" style="margin-top:4px;font-size:.78rem">
+        Если выключено, участники после отправки ответа увидят нейтральный экран ожидания до конца таймера без списка ответивших и ожидаемых.
+      </div>
+    </div>
+
+    <div style="margin-top:14px;font-size:.85rem">
+      <div class="mini-label">Блоки диагностики</div>
+      <div class="row" style="margin-top:6px">
+        <label><input type="checkbox" id="block_cognitive_cards" checked/> Когнитивные карточки</label>
+        <label><input type="checkbox" id="block_emp_motivation" checked/> Мотивация</label>
+        <label><input type="checkbox" id="block_emp_communication" checked/> Коммуникация</label>
+        <label><input type="checkbox" id="block_emp_self_regulation" checked/> Саморегуляция</label>
+        <label><input type="checkbox" id="block_emp_career_orientation"/> Карьерная направленность</label>
+        <label><input type="checkbox" id="block_emp_values"/> Ценности</label>
+        <label><input type="checkbox" id="block_emp_control"/> Контроль</label>
+        <label><input type="checkbox" id="block_legacy_math"/> Legacy: математика</label>
+        <label><input type="checkbox" id="block_legacy_logic"/> Legacy: логика</label>
+        <label><input type="checkbox" id="block_legacy_data"/> Legacy: анализ данных</label>
+      </div>
+      <div class="muted" style="margin-top:4px;font-size:.78rem">
+        Галочки используются только в режиме «Конструктор блоков». В остальных режимах конфигурация выставляется автоматически.
       </div>
     </div>
   </div>
 
-  <!-- ROOM / PLAYERS -->
   <div class="card" id="roomBox" style="display:none">
     <div class="top-row">
       <div class="section-title">Участники</div>
@@ -372,7 +257,6 @@
     <ul id="playersList"></ul>
   </div>
 
-  <!-- LIVE QUESTION -->
   <div class="card" id="live" style="display:none">
     <div class="top-row">
       <div class="section-title">Текущее задание</div>
@@ -388,6 +272,8 @@
 
       <div class="q-extra">
         <span id="modePill" class="pill mode-card" style="display:none">Когнитивная карточка</span>
+        <span id="blockPill" class="pill" style="display:none"></span>
+        <span id="instrumentLabel" class="muted" style="display:none"></span>
         <span id="subtypeLabel" class="muted" style="display:none"></span>
       </div>
 
@@ -396,7 +282,6 @@
     </div>
   </div>
 
-  <!-- LAST REVEAL -->
   <div class="card" id="reveal" style="display:none">
     <div class="section-title">Итоги последнего раунда</div>
     <div class="muted" id="revealTitle" style="font-size:.9rem;margin-bottom:6px"></div>
@@ -405,8 +290,10 @@
         <tr>
           <th>Игрок</th>
           <th>Ответ</th>
-          <th>Верно</th>
+          <th>Статус</th>
           <th>+балл</th>
+          <th>Partial</th>
+          <th>Поведение</th>
           <th>Время, мс</th>
         </tr>
       </thead>
@@ -416,27 +303,199 @@
     <ul id="scoreList" style="margin-top:4px"></ul>
   </div>
 
-  <!-- EXPORT -->
   <div class="card" id="export" style="display:none">
     <div class="section-title">Экспорт результатов</div>
-    <div class="muted" style="font-size:.9rem;margin-bottom:6px">
-      После завершения сессии вы можете выгрузить CSV по комнате и по отдельным игрокам.
+    <div class="muted" style="font-size:.9rem;margin-bottom:10px">
+      После завершения сессии доступны как сырые выгрузки, так и готовые HR-отчёты с потенциалом, направленностями, качеством данных, поведенческими индикаторами и рекомендациями.
     </div>
+
     <div class="row" style="margin-bottom:10px">
-      <a id="dlRoom" class="btn-link">
-        <button class="btn ghost" type="button">Итоги комнаты (CSV)</button>
-      </a>
-      <div class="muted" style="font-size:.85rem">
-        Файл содержит список игроков и их итоговые баллы.
-      </div>
+      <a id="dlRoom" class="btn-link"><button class="btn ghost" type="button">Итоги комнаты (CSV)</button></a>
+      <a id="dlHrCsv" class="btn-link"><button class="btn ghost" type="button">HR-отчёт (CSV)</button></a>
+      <a id="dlHrJson" class="btn-link"><button class="btn ghost" type="button">HR-отчёт (JSON)</button></a>
     </div>
+
+    <div class="muted" style="font-size:.85rem;margin-bottom:12px">
+      CSV — для таблиц и аналитики, JSON — для интеграций, архива и передачи полной структуры профиля с картой дефицитов.
+    </div>
+
     <div class="row">
       <label for="playerExport">ID игрока:</label>
       <input id="playerExport" type="text" placeholder="p_xxxxxxxx" style="width:140px"/>
-      <a id="dlPlayer" class="btn-link">
-        <button class="btn ghost" type="button">Экспорт по игроку</button>
-      </a>
+      <a id="dlPlayer" class="btn-link"><button class="btn ghost" type="button">Ответы игрока (CSV)</button></a>
+      <a id="dlPlayerProfile" class="btn-link"><button class="btn ghost" type="button">Профиль игрока (JSON)</button></a>
     </div>
+  </div>
+
+  <div class="card" id="hrDashboard" style="display:none">
+    <h2 style="margin:0 0 6px">HR-дашборд комнаты</h2>
+    <div class="muted">Общая сводка, групповой профиль, поведенческие сигналы и детальные карточки участников.</div>
+
+    <div class="dash-grid">
+      <div class="dash-stat"><div class="k">Игроков</div><div class="v" id="hrPlayersCount">—</div></div>
+      <div class="dash-stat"><div class="k">Средний балл</div><div class="v" id="hrAvgScore">—</div></div>
+      <div class="dash-stat"><div class="k">Средняя точность</div><div class="v" id="hrAvgAccuracy">—</div></div>
+      <div class="dash-stat"><div class="k">Средний потенциал</div><div class="v" id="hrAvgPotential">—</div></div>
+      <div class="dash-stat"><div class="k">Средняя готовность к стажировке</div><div class="v" id="hrAvgInternshipReadiness">—</div></div>
+      <div class="dash-stat"><div class="k">Средняя уверенность рекомендации</div><div class="v" id="hrAvgRecommendationConfidence">—</div></div>
+      <div class="dash-stat"><div class="k">Средняя соц. желательность</div><div class="v" id="hrAvgSocialDesirability">—</div></div>
+    </div>
+
+    <div class="radar-admin-grid">
+      <div class="radar-panel">
+        <div class="section-title">Средний ЭМП-профиль группы</div>
+        <div class="radar-host" id="hrEmpRadar"></div>
+      </div>
+      <div class="radar-panel">
+        <div class="section-title">Средний когнитивный профиль группы</div>
+        <div class="radar-host" id="hrCogRadar"></div>
+      </div>
+    </div>
+
+    <div class="detail-box" style="margin-top:12px">
+      <div class="section-title">Ключевые теги комнаты</div>
+      <div id="hrTopTags"></div>
+    </div>
+
+    <div class="detail-box" style="margin-top:12px">
+      <div class="section-title">Топ рекомендуемых профессий / ролей</div>
+      <div id="hrTopRoles"></div>
+    </div>
+
+    <div class="detail-box" style="margin-top:12px">
+      <div class="section-title">Участники</div>
+      <table class="players-admin-table">
+        <thead>
+          <tr><th>Игрок</th><th>Игра</th><th>Профиль</th><th>Качество данных</th><th>Поведение</th><th></th></tr>
+        </thead>
+        <tbody id="hrPlayersBody"></tbody>
+      </table>
+    </div>
+
+
+
+    <div class="view-toggle" id="hrViewToggle" style="display:none">
+      <button class="btn active" id="btnViewDashboard" type="button">Дашборд</button>
+      <button class="btn ghost" id="btnViewAi" type="button">ИИ рекомендации</button>
+    </div>
+
+    <div class="detail-grid" id="hrPlayerDetailWrap" style="display:none">
+      <div>
+        <div class="detail-box">
+          <h3 id="hrDetailName" style="margin:0 0 8px">Профиль игрока</h3>
+          <div class="muted" id="hrDetailSummary" style="line-height:1.5"></div>
+          <div id="hrDetailTags" style="margin-top:10px"></div>
+          <div class="dash-grid" style="margin-top:12px">
+            <div class="dash-stat"><div class="k">Общий потенциал</div><div class="v" id="hrDetailPotential">—</div></div>
+            <div class="dash-stat"><div class="k">Точность</div><div class="v" id="hrDetailAccuracy">—</div></div>
+            <div class="dash-stat"><div class="k">Скорость</div><div class="v" id="hrDetailSpeed">—</div></div>
+            <div class="dash-stat"><div class="k">Внимание</div><div class="v" id="hrDetailAttention">—</div></div>
+            <div class="dash-stat"><div class="k">Соц. желательность</div><div class="v" id="hrDetailSocialDesirability">—</div></div>
+            <div class="dash-stat"><div class="k">Колебания</div><div class="v" id="hrDetailHesitation">—</div></div>
+            <div class="dash-stat"><div class="k">Стабильность</div><div class="v" id="hrDetailStability">—</div></div>
+            <div class="dash-stat"><div class="k">Пропуски</div><div class="v" id="hrDetailSkip">—</div></div>
+            <div class="dash-stat"><div class="k">Настойчивость</div><div class="v" id="hrDetailPersistence">—</div></div>
+            <div class="dash-stat"><div class="k">Рекомендуемая роль</div><div class="v" id="hrDetailRole">—</div></div>
+            <div class="dash-stat"><div class="k">Совпадение роли</div><div class="v" id="hrDetailRoleScore">—</div></div>
+            <div class="dash-stat"><div class="k">Трек стажировки</div><div class="v" id="hrDetailInternshipTrack">—</div></div>
+            <div class="dash-stat"><div class="k">HR-решение</div><div class="v" id="hrDetailInternshipDecision">—</div></div>
+            <div class="dash-stat"><div class="k">Готовность</div><div class="v" id="hrDetailInternshipReadiness">—</div></div>
+            <div class="dash-stat"><div class="k">Уверенность рекомендации</div><div class="v" id="hrDetailRecommendationConfidence">—</div></div>
+            <div class="dash-stat"><div class="k">Наставник</div><div class="v" id="hrDetailMentorNeed">—</div></div>
+            <div class="dash-stat"><div class="k">Адаптация</div><div class="v" id="hrDetailAdaptationNeed">—</div></div>
+          </div>
+        </div>
+
+        <div class="subgrid-3" style="margin-top:12px">
+          <div class="detail-box"><h4>Сильные стороны</h4><ul id="hrDetailStrengths"></ul></div>
+          <div class="detail-box"><h4>Зоны роста</h4><ul id="hrDetailGrowth"></ul></div>
+          <div class="detail-box"><h4>Рекомендации</h4><ul id="hrDetailRecommendations"></ul></div>
+        </div>
+
+        <div class="detail-box" style="margin-top:12px">
+          <h4>Формат рекомендуемой стажировки</h4>
+          <div class="muted" id="hrDetailInternshipFormat" style="line-height:1.5">—</div>
+        </div>
+
+        <div class="subgrid-3" style="margin-top:12px">
+          <div class="detail-box"><h4>Критичные дефициты</h4><ul id="hrDetailCriticalGaps"></ul></div>
+          <div class="detail-box"><h4>Развивающие дефициты</h4><ul id="hrDetailDevelopmentGaps"></ul></div>
+          <div class="detail-box"><h4>Зоны быстрого роста</h4><ul id="hrDetailFastGrowthZones"></ul></div>
+        </div>
+
+        <div class="detail-box" style="margin-top:12px">
+          <h4>История ответов</h4>
+          <div class="history-wrap">
+            <table class="table-mini">
+              <thead>
+                <tr>
+                  <th>Раунд</th>
+                  <th>Категория</th>
+                  <th>Задание</th>
+                  <th>Ответ</th>
+                  <th>Статус</th>
+                  <th>+балл</th>
+                  <th>Время</th>
+                </tr>
+              </thead>
+              <tbody id="hrDetailHistory"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="radar-panel">
+          <div class="section-title">ЭМП</div>
+          <div class="radar-host" id="hrDetailEmpRadar"></div>
+        </div>
+        <div class="radar-panel" style="margin-top:12px">
+          <div class="section-title">Когнитивный профиль</div>
+          <div class="radar-host" id="hrDetailCogRadar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-shell" id="hrAiWrap">
+      <div class="ai-card">
+        <div class="ai-head">
+          <div>
+            <div class="section-title" style="margin-bottom:6px">ИИ рекомендации</div>
+            <div class="muted" id="hrAiSubtitle">Выберите участника, чтобы запросить экспертную AI-оценку.</div>
+          </div>
+          <div class="ai-actions">
+            <span class="ai-status empty" id="hrAiStatus">не загружено</span>
+            <button class="btn" id="btnAiGenerate" type="button">Загрузить AI-экспертизу</button>
+            <button class="btn ghost" id="btnAiRefresh" type="button">Обновить</button>
+          </div>
+        </div>
+
+        <div class="ai-progress" id="hrAiProgressPanel">
+          <div class="muted">Формируем AI-экспертизу на основе профиля, поведенческих сигналов и истории ответов.</div>
+          <div class="ai-progressbar"><span id="hrAiProgressBar"></span></div>
+          <div class="ai-steps" id="hrAiSteps"></div>
+        </div>
+
+        <div id="hrAiReportGrid" style="display:none">
+          <div class="ai-grid">
+            <div class="ai-metric"><div class="k">AI fit</div><div class="v" id="hrAiFit">—</div><div class="muted" id="hrAiFitSub" style="margin-top:6px"></div></div>
+            <div class="ai-metric"><div class="k">Уверенность</div><div class="v" id="hrAiConfidence">—</div></div>
+            <div class="ai-metric"><div class="k">Основной трек</div><div class="v" id="hrAiPrimaryTrack">—</div><div class="muted" id="hrAiPrimaryTrackSub" style="margin-top:6px"></div></div>
+            <div class="ai-metric"><div class="k">Рекомендуемая профессия / роль</div><div class="v" id="hrAiPrimaryRole">—</div><div class="muted" id="hrAiPrimaryRoleSub" style="margin-top:6px"></div></div>
+            <div class="ai-metric"><div class="k">Альтернативные треки</div><div class="v" id="hrAiAltTracks">—</div></div>
+            <div class="ai-metric"><div class="k">Альтернативные роли</div><div class="v" id="hrAiAltRoles">—</div></div>
+          </div>
+          <div class="detail-box ai-summary" id="hrAiSummary">—</div>
+          <div class="ai-columns">
+            <div class="detail-box ai-box"><h4>Сильные стороны по ИИ</h4><ul id="hrAiStrengths"></ul></div>
+            <div class="detail-box ai-box"><h4>Риски и наблюдения</h4><ul id="hrAiRisks"></ul></div>
+            <div class="detail-box ai-box"><h4>Что уточнить на интервью</h4><ul id="hrAiInterview"></ul></div>
+          </div>
+          <div class="detail-box ai-foot" id="hrAiCaveats">—</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -449,9 +508,33 @@
   let deadline = 0;
   let tId = null;
   let currentStatus = 'lobby';
+  let adminDashboardData = null;
+  let hrSelectedPlayerId = null;
+  let hrActiveView = "dashboard";
+  let hrAiProgressTimer = null;
+  const AI_LOADING_STEPS = [
+    { key:"payload", title:"Профиль игрока", text:"Собираем scoring, частичные баллы и историю ответов" },
+    { key:"behavior", title:"Поведенческий слой", text:"Анализируем колебания, стабильность и пропуски" },
+    { key:"tracks", title:"HR-интерпретация", text:"Готовим экспертный вывод и рекомендации по треку" },
+    { key:"final", title:"Финализация", text:"Формируем итоговый текст для HR" }
+  ];
 
-  // Режим фильтра задач: all | cards_only | no_cards
-  let taskFilterMode = 'all';
+  let assessmentMode = 'emp_full';
+  let customBlockConfig = {
+    cognitive_cards: true,
+    emp_motivation: true,
+    emp_communication: true,
+    emp_self_regulation: true,
+    emp_career_orientation: false,
+    emp_values: false,
+    emp_control: true,
+    legacy_math: false,
+    legacy_logic: false,
+    legacy_data: false,
+    legacy_misc: false
+  };
+
+  const AUTO_PLAN_MODES = new Set(['emp_core_plus_cards','cards_only','emp_full','emp_full_all_cards_controls']);
 
   const toastEl = $('toast');
   function toast(msg){
@@ -465,6 +548,17 @@
       .replace(/&/g,'&amp;')
       .replace(/</g,'&lt;')
       .replace(/>/g,'&gt;');
+  }
+
+  function fmtMs(ms){
+    if (ms == null || ms === '' || Number.isNaN(Number(ms))) return '—';
+    return (Number(ms) / 1000).toFixed(1) + ' с';
+  }
+
+  function formatScore(value){
+    const num = Number(value || 0);
+    if (!Number.isFinite(num)) return '0';
+    return Math.abs(num - Math.round(num)) < 1e-9 ? String(Math.round(num)) : num.toFixed(2);
   }
 
   function setStatus(status){
@@ -483,7 +577,7 @@
     list.innerHTML = '';
     (players || []).forEach(p=>{
       const li = document.createElement('li');
-      li.innerHTML = escapeHtml(p.name) + ' — <b>' + (p.score || 0) + '</b>';
+      li.innerHTML = escapeHtml(p.name) + ' — <b>' + formatScore(p.score) + '</b>';
       list.appendChild(li);
     });
 
@@ -496,48 +590,150 @@
   function tick(){
     const left = Math.max(0, Math.floor(deadline - Date.now()/1000));
     $('timer').textContent = String(Math.floor(left/60)) + ':' + String(left%60).padStart(2,'0');
-    if (left<=0) clearInterval(tId);
+    if (left <= 0) clearInterval(tId);
   }
 
   async function loadStats(){
     try{
       const data = await fetch('/api/tasks').then(r=>r.json());
-      const lines = ['Всего задач: ' + data.total];
-      for(const [k,v] of Object.entries(data.categories||{})){
-        lines.push(k + ': ' + v);
+      const parts = ['Всего задач: ' + data.total];
+      const blocks = data.blocks || {};
+      if (Object.keys(blocks).length){
+        parts.push('Блоки: ' + Object.entries(blocks).map(([k,v])=>k + ' = ' + v).join(', '));
       }
-      $('stats').textContent = lines.join('  |  ');
+      $('stats').textContent = parts.join('  |  ');
     }catch(e){
       $('stats').textContent = 'Не удалось получить статистику задач.';
     }
   }
+
   $('btnReload').onclick = async ()=>{
-    try{
-      await fetch('/api/tasks/reload',{method:'POST'});
-    }catch(e){}
+    try{ await fetch('/api/tasks/reload',{method:'POST'}); }catch(e){}
     loadStats();
   };
   loadStats();
 
-  // Переключатель режима фильтра задач
-  const filterAll = $('filterAll');
-  const filterCardsOnly = $('filterCardsOnly');
-  const filterNoCards = $('filterNoCards');
+  const modeEmpCore = $('modeEmpCore');
+  const modeCardsOnly = $('modeCardsOnly');
+  const modeEmpFull = $('modeEmpFull');
+  const modeLegacy = $('modeLegacy');
+  const modeCustom = $('modeCustom');
+  const waitForAllPlayersEl = $('waitForAllPlayers');
+  let waitForAllPlayers = true;
 
-  if (filterAll && filterCardsOnly && filterNoCards){
-    filterAll.addEventListener('change', ()=>{
-      if (filterAll.checked){
-        taskFilterMode = 'all';
+  function applyWaitModeFromRoom(enabled){
+    waitForAllPlayers = enabled !== false;
+    if (waitForAllPlayersEl) waitForAllPlayersEl.checked = waitForAllPlayers;
+  }
+
+  const blockCheckboxIds = [
+    'block_cognitive_cards','block_emp_motivation','block_emp_communication','block_emp_self_regulation',
+    'block_emp_career_orientation','block_emp_values','block_emp_control','block_legacy_math','block_legacy_logic','block_legacy_data'
+  ];
+
+  function collectBlockConfigFromUi(){
+    return {
+      cognitive_cards: !!$('block_cognitive_cards').checked,
+      emp_motivation: !!$('block_emp_motivation').checked,
+      emp_communication: !!$('block_emp_communication').checked,
+      emp_self_regulation: !!$('block_emp_self_regulation').checked,
+      emp_career_orientation: !!$('block_emp_career_orientation').checked,
+      emp_values: !!$('block_emp_values').checked,
+      emp_control: !!$('block_emp_control').checked,
+      legacy_math: !!$('block_legacy_math').checked,
+      legacy_logic: !!$('block_legacy_logic').checked,
+      legacy_data: !!$('block_legacy_data').checked,
+      legacy_misc: false
+    };
+  }
+
+  function applyBlockConfigToUi(cfg){
+    const safe = cfg || {};
+    $('block_cognitive_cards').checked = !!safe.cognitive_cards;
+    $('block_emp_motivation').checked = !!safe.emp_motivation;
+    $('block_emp_communication').checked = !!safe.emp_communication;
+    $('block_emp_self_regulation').checked = !!safe.emp_self_regulation;
+    $('block_emp_career_orientation').checked = !!safe.emp_career_orientation;
+    $('block_emp_values').checked = !!safe.emp_values;
+    $('block_emp_control').checked = !!safe.emp_control;
+    $('block_legacy_math').checked = !!safe.legacy_math;
+    $('block_legacy_logic').checked = !!safe.legacy_logic;
+    $('block_legacy_data').checked = !!safe.legacy_data;
+  }
+
+  function updateRoundsUiByMode(){
+    const rounds = $('rounds');
+    const hint = $('roundsHint');
+    const auto = AUTO_PLAN_MODES.has(assessmentMode);
+    rounds.readOnly = false;
+    rounds.disabled = false;
+    rounds.placeholder = auto ? 'все' : 'все';
+    if (auto){
+      rounds.title = 'Пустое поле = весь автоматически собранный сценарий. Заполненное поле = верхний лимит по числу раундов.';
+      hint.textContent = 'Сейчас выбран режим с автоматической сборкой сценария. Если поле «Раундов» пустое, сервер возьмёт весь сценарий из активных блоков. Если число указано, сервер ограничит итоговую сессию этим лимитом.';
+    }else{
+      rounds.title = 'Пустое поле = все доступные задания из выбранных блоков. Заполненное поле = точное количество/верхний лимит.';
+      hint.textContent = 'В текущем режиме пустое поле «Раундов» означает: использовать весь доступный набор заданий из активных блоков без скрытого дефолта. Если число указано, сервер применит его как лимит по раундам.';
+    }
+  }
+
+  function setAssessmentMode(mode, cfg){
+    assessmentMode = mode || 'emp_full';
+    modeEmpCore.checked = assessmentMode === 'emp_core_plus_cards';
+    modeCardsOnly.checked = assessmentMode === 'cards_only';
+    modeEmpFull.checked = assessmentMode === 'emp_full';
+    modeLegacy.checked = assessmentMode === 'legacy';
+    modeCustom.checked = assessmentMode === 'custom';
+
+    if (cfg){
+      customBlockConfig = { ...customBlockConfig, ...cfg };
+      applyBlockConfigToUi(customBlockConfig);
+      updateRoundsUiByMode();
+      return;
+    }
+
+    if (assessmentMode === 'emp_core_plus_cards'){
+      customBlockConfig = { cognitive_cards:true, emp_motivation:true, emp_communication:true, emp_self_regulation:true, emp_career_orientation:false, emp_values:false, emp_control:true, legacy_math:false, legacy_logic:false, legacy_data:false, legacy_misc:false };
+    }else if (assessmentMode === 'cards_only'){
+      customBlockConfig = { cognitive_cards:true, emp_motivation:false, emp_communication:false, emp_self_regulation:false, emp_career_orientation:false, emp_values:false, emp_control:false, legacy_math:false, legacy_logic:false, legacy_data:false, legacy_misc:false };
+    }else if (assessmentMode === 'emp_full'){
+      customBlockConfig = { cognitive_cards:true, emp_motivation:true, emp_communication:true, emp_self_regulation:true, emp_career_orientation:true, emp_values:true, emp_control:true, legacy_math:false, legacy_logic:false, legacy_data:false, legacy_misc:false };
+    }else if (assessmentMode === 'legacy'){
+      customBlockConfig = { cognitive_cards:true, emp_motivation:false, emp_communication:false, emp_self_regulation:false, emp_career_orientation:false, emp_values:false, emp_control:false, legacy_math:true, legacy_logic:true, legacy_data:true, legacy_misc:true };
+    }else{
+      customBlockConfig = collectBlockConfigFromUi();
+    }
+
+    applyBlockConfigToUi(customBlockConfig);
+    updateRoundsUiByMode();
+  }
+
+  modeEmpCore.addEventListener('change', ()=>{ if (modeEmpCore.checked) setAssessmentMode('emp_core_plus_cards'); });
+  modeCardsOnly.addEventListener('change', ()=>{ if (modeCardsOnly.checked) setAssessmentMode('cards_only'); });
+  modeEmpFull.addEventListener('change', ()=>{ if (modeEmpFull.checked) setAssessmentMode('emp_full'); });
+  modeLegacy.addEventListener('change', ()=>{ if (modeLegacy.checked) setAssessmentMode('legacy'); });
+  modeCustom.addEventListener('change', ()=>{ if (modeCustom.checked) setAssessmentMode('custom'); });
+
+  blockCheckboxIds.forEach(id=>{
+    const el = $(id);
+    if (!el) return;
+    el.addEventListener('change', ()=>{
+      customBlockConfig = collectBlockConfigFromUi();
+      if (!modeCustom.checked){
+        modeCustom.checked = true;
+        assessmentMode = 'custom';
       }
+      updateRoundsUiByMode();
     });
-    filterCardsOnly.addEventListener('change', ()=>{
-      if (filterCardsOnly.checked){
-        taskFilterMode = 'cards_only';
-      }
-    });
-    filterNoCards.addEventListener('change', ()=>{
-      if (filterNoCards.checked){
-        taskFilterMode = 'no_cards';
+  });
+
+  setAssessmentMode('emp_full');
+
+  if (waitForAllPlayersEl){
+    waitForAllPlayersEl.addEventListener('change', ()=>{
+      waitForAllPlayers = !!waitForAllPlayersEl.checked;
+      if (roomCode && ws && ws.readyState === WebSocket.OPEN){
+        ws.send(JSON.stringify({ type:'admin_set_wait_mode', roomCode, waitForAllPlayers }));
       }
     });
   }
@@ -547,13 +743,8 @@
   });
 
   function ensureWs(onOpen){
-    if (ws && ws.readyState === WebSocket.OPEN){
-      onOpen();
-      return;
-    }
-    if (ws && ws.readyState !== WebSocket.CLOSED && ws.readyState !== WebSocket.CLOSING){
-      ws.close();
-    }
+    if (ws && ws.readyState === WebSocket.OPEN){ onOpen(); return; }
+    if (ws && ws.readyState !== WebSocket.CLOSED && ws.readyState !== WebSocket.CLOSING){ ws.close(); }
     ws = new WebSocket('ws://' + host + '/ws');
     ws.onopen = onOpen;
     ws.onmessage = onMessage;
@@ -562,89 +753,594 @@
   }
 
   $('btnCreate').onclick = ()=>{
-    const rounds = Math.max(1, Math.min(30, parseInt($('rounds').value||'12',10)));
+    const rawRounds = String($('rounds').value || '').trim();
+    let rounds = null;
+
+    if (rawRounds !== ''){
+      const parsed = parseInt(rawRounds, 10);
+      if (!Number.isFinite(parsed)){
+        toast('Введите корректное количество раундов');
+        return;
+      }
+      rounds = Math.max(1, Math.min(40, parsed));
+      $('rounds').value = String(rounds);
+    }
+
+    const blockConfig = assessmentMode === 'custom' ? collectBlockConfigFromUi() : customBlockConfig;
     ensureWs(()=>{
       ws.send(JSON.stringify({
-        type:'admin_create_room',
+        type: 'admin_create_room',
         rounds: rounds,
-        taskFilterMode: taskFilterMode
+        assessmentMode: assessmentMode,
+        blockConfig: blockConfig,
+        waitForAllPlayers: waitForAllPlayers
       }));
     });
   };
 
   $('btnAttach').onclick = ()=>{
     const code = ($('roomInput').value || roomCode || '').trim().toUpperCase();
-    if (!code || code.length !== 4){
-      toast('Введите код комнаты (4 символа).');
-      return;
-    }
-    ensureWs(()=>{
-      ws.send(JSON.stringify({ type:'admin_attach', roomCode: code }));
-    });
+    if (!code || code.length !== 4){ toast('Введите код комнаты (4 символа).'); return; }
+    ensureWs(()=>{ ws.send(JSON.stringify({ type:'admin_attach', roomCode: code })); });
   };
 
   $('btnStart').onclick = ()=>{
-    if (!roomCode){
-      toast('Комната не выбрана');
-      return;
-    }
+    if (!roomCode){ toast('Комната не выбрана'); return; }
     if (!ws) return;
     ws.send(JSON.stringify({ type:'admin_start', roomCode: roomCode }));
   };
 
   $('btnEnd').onclick = ()=>{
-    if (!roomCode){
-      toast('Комната не выбрана');
-      return;
-    }
+    if (!roomCode){ toast('Комната не выбрана'); return; }
     if (!ws) return;
     ws.send(JSON.stringify({ type:'admin_end', roomCode: roomCode }));
   };
 
-  $('dlRoom').onclick = (e)=>{
-    if (!roomCode){
-      e.preventDefault();
-      toast('Сначала создайте или подключитесь к комнате.');
-      return;
-    }
-    $('dlRoom').href = '/api/export/' + roomCode + '/room.csv';
-  };
+  function ensureRoomForExport(e){
+    if (!roomCode){ e.preventDefault(); toast('Сначала создайте или подключитесь к комнате.'); return false; }
+    return true;
+  }
 
+  $('dlRoom').onclick = (e)=>{ if (!ensureRoomForExport(e)) return; $('dlRoom').href = '/api/export/' + roomCode + '/room.csv'; };
+  $('dlHrCsv').onclick = (e)=>{ if (!ensureRoomForExport(e)) return; $('dlHrCsv').href = '/api/export/' + roomCode + '/hr-report.csv'; };
+  $('dlHrJson').onclick = (e)=>{ if (!ensureRoomForExport(e)) return; $('dlHrJson').href = '/api/export/' + roomCode + '/hr-report.json'; };
   $('dlPlayer').onclick = (e)=>{
     const pid = $('playerExport').value.trim();
-    if (!roomCode || !pid){
-      e.preventDefault();
-      toast('Укажите код комнаты и ID игрока.');
-      return;
-    }
+    if (!roomCode || !pid){ e.preventDefault(); toast('Укажите код комнаты и ID игрока.'); return; }
     $('dlPlayer').href = '/api/export/' + roomCode + '/player/' + encodeURIComponent(pid) + '.csv';
   };
+  $('dlPlayerProfile').onclick = (e)=>{
+    const pid = $('playerExport').value.trim();
+    if (!roomCode || !pid){ e.preventDefault(); toast('Укажите код комнаты и ID игрока.'); return; }
+    $('dlPlayerProfile').href = '/api/export/' + roomCode + '/player/' + encodeURIComponent(pid) + '/profile.json';
+  };
 
-  function applyTaskFilterFromRoom(mode){
-    if (!mode){
-      taskFilterMode = 'all';
-      if (filterAll) filterAll.checked = true;
-      return;
+  function applyAssessmentConfigFromRoom(mode, cfg){
+    if (cfg && typeof cfg === 'object'){ setAssessmentMode(mode || 'custom', cfg); return; }
+    setAssessmentMode(mode || 'emp_full');
+  }
+
+  function formatAdminAnswer(result, message){
+    if (!result) return '—';
+    if (message.qtype === 'mcq'){
+      const opts = message.options || [];
+      if (result.choice != null && opts[result.choice] != null){ return String(opts[result.choice]); }
+      return '—';
     }
-    taskFilterMode = mode;
-    if (filterAll && filterCardsOnly && filterNoCards){
-      if (mode === 'cards_only'){
-        filterCardsOnly.checked = true;
-      }else if (mode === 'no_cards'){
-        filterNoCards.checked = true;
+    const raw = String(result.text || '').trim();
+    return raw || '—';
+  }
+
+  function setHtmlList(id, items){
+    const box = $(id);
+    box.innerHTML = '';
+    (items || []).forEach(item=>{
+      const li = document.createElement('li');
+      li.textContent = item;
+      box.appendChild(li);
+    });
+    if (!box.children.length){
+      const li = document.createElement('li');
+      li.textContent = '—';
+      box.appendChild(li);
+    }
+  }
+
+  function formatGapItems(items){
+    return (items || []).map(item=>{
+      if (typeof item === 'string') return item;
+      const label = item.label || item.axis || 'показатель';
+      const actual = item.actual != null ? String(item.actual) + '/100' : '—';
+      const required = item.required != null ? String(item.required) + '/100' : '—';
+      const gap = item.gap != null ? ', разрыв ' + item.gap : '';
+      const message = item.message ? ' — ' + item.message : '';
+      return label + ': ' + actual + ' при требуемом ' + required + gap + message;
+    });
+  }
+
+  function formatLevel(level){
+    const map = { low:'низкий', medium:'средний', high:'высокий' };
+    return map[level] || level || '—';
+  }
+
+  function setTagChips(id, items){
+    const box = $(id);
+    box.innerHTML = '';
+    (items || []).forEach(item=>{
+      const span = document.createElement('span');
+      span.className = 'player-chip';
+      if (typeof item === 'string') span.textContent = item;
+      else span.textContent = String(item.tag || '') + (item.count != null ? ' · ' + item.count : '');
+      box.appendChild(span);
+    });
+    if (!box.children.length){
+      const span = document.createElement('span');
+      span.className = 'player-chip';
+      span.textContent = '—';
+      box.appendChild(span);
+    }
+  }
+
+  function splitRadarLabel(text, maxCharsPerLine){
+    const src = String(text || '').trim();
+    if (!src) return ['—'];
+    const words = src.split(/\s+/);
+    const lines = [];
+    let current = '';
+
+    function pushChunkedWord(word){
+      let rest = word;
+      while (rest.length > maxCharsPerLine){
+        lines.push(rest.slice(0, maxCharsPerLine));
+        rest = rest.slice(maxCharsPerLine);
+      }
+      return rest;
+    }
+
+    for (const rawWord of words){
+      let word = rawWord;
+      if (!current){
+        current = word.length <= maxCharsPerLine ? word : pushChunkedWord(word);
+        continue;
+      }
+      const joined = current + ' ' + word;
+      if (joined.length <= maxCharsPerLine){
+        current = joined;
       }else{
-        filterAll.checked = true;
+        lines.push(current);
+        current = word.length <= maxCharsPerLine ? word : pushChunkedWord(word);
       }
     }
+    if (current) lines.push(current);
+    return lines.slice(0, 3);
+  }
+
+  function renderRadarAdmin(hostId, items){
+    const hostEl = $(hostId);
+    hostEl.innerHTML = '';
+    const data = (items || []).filter(Boolean);
+    if (!data.length){ hostEl.textContent = 'Недостаточно данных'; return; }
+
+    const hostWidth = hostEl.clientWidth || 340;
+    const compact = hostWidth < 420;
+    const size = 420;
+    const cx = 210;
+    const cy = 190;
+    const radius = compact ? 102 : 110;
+    const labelOffset = compact ? 34 : 38;
+    const fontSize = compact ? 10 : 11;
+    const lineHeight = compact ? 12 : 13;
+    const maxCharsPerLine = compact ? 10 : 12;
+    const levels = 5;
+
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('viewBox', '0 0 420 380');
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+    for (let level=1; level<=levels; level++){
+      const r = radius * level / levels;
+      const pts = data.map((_, i)=>{
+        const a = -Math.PI / 2 + (Math.PI * 2 * i / data.length);
+        return (cx + Math.cos(a) * r).toFixed(1) + ',' + (cy + Math.sin(a) * r).toFixed(1);
+      }).join(' ');
+      const poly = document.createElementNS(svgNS, 'polygon');
+      poly.setAttribute('points', pts);
+      poly.setAttribute('fill', 'none');
+      poly.setAttribute('stroke', '#dbeafe');
+      poly.setAttribute('stroke-width', level === levels ? '1.5' : '1');
+      svg.appendChild(poly);
+    }
+
+    data.forEach((item, i)=>{
+      const a = -Math.PI / 2 + (Math.PI * 2 * i / data.length);
+      const x = cx + Math.cos(a) * radius;
+      const y = cy + Math.sin(a) * radius;
+      const line = document.createElementNS(svgNS, 'line');
+      line.setAttribute('x1', cx);
+      line.setAttribute('y1', cy);
+      line.setAttribute('x2', x);
+      line.setAttribute('y2', y);
+      line.setAttribute('stroke', '#cbd5e1');
+      line.setAttribute('stroke-width', '1');
+      svg.appendChild(line);
+
+      const lx = cx + Math.cos(a) * (radius + labelOffset);
+      const ly = cy + Math.sin(a) * (radius + labelOffset);
+      const label = document.createElementNS(svgNS, 'text');
+      label.setAttribute('x', lx.toFixed(1));
+      label.setAttribute('y', ly.toFixed(1));
+      label.setAttribute('text-anchor', Math.cos(a) > 0.25 ? 'start' : (Math.cos(a) < -0.25 ? 'end' : 'middle'));
+      label.setAttribute('font-size', String(fontSize));
+      label.setAttribute('fill', '#334155');
+      label.setAttribute('dominant-baseline', 'middle');
+      label.setAttribute('font-weight', '600');
+
+      const lines = splitRadarLabel(item.label, maxCharsPerLine);
+      lines.forEach((lineText, idx)=>{
+        const tspan = document.createElementNS(svgNS, 'tspan');
+        tspan.setAttribute('x', lx.toFixed(1));
+        tspan.setAttribute('dy', idx === 0 ? String(-((lines.length - 1) * lineHeight) / 2) : String(lineHeight));
+        tspan.textContent = lineText;
+        label.appendChild(tspan);
+      });
+      svg.appendChild(label);
+    });
+
+    const pts = data.map((item, i)=>{
+      const a = -Math.PI / 2 + (Math.PI * 2 * i / data.length);
+      const r = radius * Math.max(0, Math.min(100, Number(item.value || 0))) / 100;
+      return {x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r};
+    });
+
+    const poly = document.createElementNS(svgNS, 'polygon');
+    poly.setAttribute('points', pts.map(p=>p.x.toFixed(1)+','+p.y.toFixed(1)).join(' '));
+    poly.setAttribute('fill', 'rgba(43,116,255,0.18)');
+    poly.setAttribute('stroke', '#2b74ff');
+    poly.setAttribute('stroke-width', '2');
+    svg.appendChild(poly);
+
+    pts.forEach(p=>{
+      const dot = document.createElementNS(svgNS, 'circle');
+      dot.setAttribute('cx', p.x.toFixed(1));
+      dot.setAttribute('cy', p.y.toFixed(1));
+      dot.setAttribute('r', '3.5');
+      dot.setAttribute('fill', '#2b74ff');
+      svg.appendChild(dot);
+    });
+
+    hostEl.appendChild(svg);
+  }
+
+  async function fetchAdminDashboard(){
+    if (!roomCode) return null;
+    const res = await fetch('/api/room/' + roomCode + '/admin-report');
+    if (!res.ok) throw new Error('admin report fetch failed');
+    adminDashboardData = await res.json();
+    return adminDashboardData;
+  }
+
+  function renderHistoryRows(history){
+    const body = $('hrDetailHistory');
+    body.innerHTML = '';
+    (history || []).forEach(item=>{
+      const tr = document.createElement('tr');
+      const statusClass = item.responseModel === 'survey' ? '' : (item.isCorrect ? 'status-ok' : ((Number(item.partialCredit || 0) > 0 || /част|почти/i.test(String(item.statusText || ''))) ? 'status-mid' : 'status-bad'));
+      tr.innerHTML =
+        '<td>' + escapeHtml(String(item.round ?? '—')) + '</td>' +
+        '<td>' + escapeHtml(item.category || '—') + '</td>' +
+        '<td>' + escapeHtml(item.questionShort || item.prompt || '—') + '</td>' +
+        '<td>' + escapeHtml(String(item.answer ?? '—')) + '</td>' +
+        '<td class="' + statusClass + '">' + escapeHtml(item.statusText || '—') + '</td>' +
+        '<td>' + escapeHtml(formatScore(item.awarded ?? 0)) + '</td>' +
+        '<td>' + escapeHtml(fmtMs(item.timeMs)) + '</td>';
+      body.appendChild(tr);
+    });
+    if (!body.children.length){
+      const tr = document.createElement('tr');
+      tr.innerHTML = '<td colspan="7">Нет данных</td>';
+      body.appendChild(tr);
+    }
+  }
+
+  function renderHrPlayerDetail(player){
+    if (!player) return;
+    $('hrPlayerDetailWrap').style.display = 'grid';
+    $('hrDetailName').textContent = player.playerName || 'Игрок';
+    $('hrDetailSummary').textContent = player.summaryText || '—';
+    setTagChips('hrDetailTags', (player.badges || []).concat(player.fitTags || []));
+    $('hrDetailPotential').textContent = player.overallPotential != null ? player.overallPotential.toFixed(1) + '/100' : '—';
+    $('hrDetailAccuracy').textContent = player.gameMetrics?.cognitiveAccuracy != null ? player.gameMetrics.cognitiveAccuracy.toFixed(1) + '%' : '—';
+    $('hrDetailSpeed').textContent = player.gameMetrics?.speedIndex != null ? player.gameMetrics.speedIndex.toFixed(1) + '/100' : '—';
+    $('hrDetailAttention').textContent = player.quality?.attentionPassRate != null ? player.quality.attentionPassRate.toFixed(1) + '%' : '—';
+    $('hrDetailSocialDesirability').textContent = player.quality?.socialDesirabilityIndex != null ? player.quality.socialDesirabilityIndex.toFixed(1) + '/100' : '—';
+    $('hrDetailHesitation').textContent = player.behavioralStyle?.hesitationIndex != null ? player.behavioralStyle.hesitationIndex.toFixed(1) + '/100' : '—';
+    $('hrDetailStability').textContent = player.behavioralStyle?.responseStabilityIndex != null ? player.behavioralStyle.responseStabilityIndex.toFixed(1) + '/100' : '—';
+    $('hrDetailSkip').textContent = player.behavioralStyle?.skipTendency != null ? player.behavioralStyle.skipTendency.toFixed(1) + '%' : '—';
+    $('hrDetailPersistence').textContent = player.behavioralStyle?.persistenceIndex != null ? player.behavioralStyle.persistenceIndex.toFixed(1) + '/100' : '—';
+    $('hrDetailRole').textContent = player.primaryRecommendedRole || player.recommendedProfession || '—';
+    $('hrDetailRoleScore').textContent = player.primaryRecommendedRoleScore != null ? Number(player.primaryRecommendedRoleScore).toFixed(1) + '/100' : '—';
+    $('hrDetailInternshipTrack').textContent = player.primaryInternshipTrackLabel || player.primaryInternshipTrack || '—';
+    $('hrDetailInternshipDecision').textContent = player.internshipDecisionLabel || player.internshipDecision || '—';
+    $('hrDetailInternshipReadiness').textContent = player.internshipReadinessScore != null ? Number(player.internshipReadinessScore).toFixed(1) + '/100' : '—';
+    $('hrDetailRecommendationConfidence').textContent = player.recommendationConfidence != null ? Number(player.recommendationConfidence).toFixed(1) + '/100' : '—';
+    $('hrDetailMentorNeed').textContent = formatLevel(player.mentorNeedLevel);
+    $('hrDetailAdaptationNeed').textContent = formatLevel(player.adaptationNeedLevel);
+    $('hrDetailInternshipFormat').textContent = player.recommendedInternshipFormat || '—';
+    setHtmlList('hrDetailStrengths', player.strengths || []);
+    setHtmlList('hrDetailGrowth', player.growthZones || []);
+    setHtmlList('hrDetailRecommendations', player.recommendations || []);
+    setHtmlList('hrDetailCriticalGaps', formatGapItems(player.criticalGaps || []));
+    setHtmlList('hrDetailDevelopmentGaps', formatGapItems(player.developmentGaps || []));
+    setHtmlList('hrDetailFastGrowthZones', formatGapItems(player.fastGrowthZones || []));
+    renderRadarAdmin('hrDetailEmpRadar', player.empRadar || []);
+    renderRadarAdmin('hrDetailCogRadar', player.cognitiveRadar || []);
+    renderHistoryRows(player.history || []);
+    $('playerExport').value = player.playerId || '';
+    hrSelectedPlayerId = player.playerId || null;
+    $('hrViewToggle').style.display = hrSelectedPlayerId ? 'flex' : 'none';
+    if (hrActiveView === 'ai') renderHrAiPanel(player, false);
+    else setHrView('dashboard');
+  }
+
+  function renderAdminDashboard(data){
+    if (!data) return;
+    $('hrDashboard').style.display = 'block';
+    $('hrPlayersCount').textContent = String(data.summary?.playersCount ?? '—');
+    $('hrAvgScore').textContent = data.summary?.avgScore != null ? data.summary.avgScore.toFixed(1) : '—';
+    $('hrAvgAccuracy').textContent = data.summary?.avgAccuracy != null ? data.summary.avgAccuracy.toFixed(1) + '%' : '—';
+    $('hrAvgPotential').textContent = data.summary?.avgPotential != null ? data.summary.avgPotential.toFixed(1) + '/100' : '—';
+    $('hrAvgInternshipReadiness').textContent = data.summary?.avgInternshipReadiness != null ? data.summary.avgInternshipReadiness.toFixed(1) + '/100' : '—';
+    $('hrAvgRecommendationConfidence').textContent = data.summary?.avgRecommendationConfidence != null ? data.summary.avgRecommendationConfidence.toFixed(1) + '/100' : '—';
+    $('hrAvgSocialDesirability').textContent = data.summary?.avgSocialDesirability != null ? data.summary.avgSocialDesirability.toFixed(1) + '/100' : '—';
+    renderRadarAdmin('hrEmpRadar', data.roomRadar?.emp || []);
+    renderRadarAdmin('hrCogRadar', data.roomRadar?.cognitive || []);
+    setTagChips('hrTopTags', data.summary?.topTags || []);
+    setTagChips('hrTopRoles', (data.summary?.topRoles || []).map(item=>({ tag:item.role || '', count:item.count })));
+    setTagChips('hrTopInternshipTracks', (data.summary?.topInternshipTracks || []).map(item=>({ tag:item.track || '', count:item.count })));
+    setTagChips('hrInternshipDecisions', (data.summary?.internshipDecisions || []).map(item=>({ tag:item.decision || '', count:item.count })));
+
+    const body = $('hrPlayersBody');
+    body.innerHTML = '';
+    (data.players || []).forEach(player=>{
+      const tr = document.createElement('tr');
+      const behavior = player.behavioralStyle || {};
+      const btn = '<button class="btn ghost" data-player-id="' + escapeHtml(player.playerId || '') + '">Профиль</button>';
+      tr.innerHTML =
+        '<td><b>' + escapeHtml(player.playerName || '') + '</b><div class="muted">Ранг #' + (player.gameMetrics?.rank ?? '—') + '</div></td>' +
+        '<td>Очки: ' + formatScore(player.score) + '<br>Точность: ' + (player.gameMetrics?.cognitiveAccuracy != null ? player.gameMetrics.cognitiveAccuracy.toFixed(1) + '%' : '—') + '<br>Скорость: ' + (player.gameMetrics?.speedIndex != null ? player.gameMetrics.speedIndex.toFixed(1) + '/100' : '—') + '</td>' +
+        '<td>Потенциал: ' + (player.overallPotential != null ? player.overallPotential.toFixed(1) + '/100' : '—') + '<br><b>Стажировка:</b> ' + escapeHtml(player.primaryInternshipTrackLabel || player.primaryInternshipTrack || '—') + '<br><b>Решение:</b> ' + escapeHtml(player.internshipDecisionLabel || player.internshipDecision || '—') + '<br><b>Роль:</b> ' + escapeHtml(player.primaryRecommendedRole || player.recommendedProfession || '—') + '</td>' +
+        '<td><b>Внимание:</b> ' + (player.quality?.attentionPassRate != null ? player.quality.attentionPassRate.toFixed(1) + '%' : '—') + '<br><b>Соц. желательность:</b> ' + (player.quality?.socialDesirabilityIndex != null ? player.quality.socialDesirabilityIndex.toFixed(1) + '/100' : '—') + '</td>' +
+        '<td>Колебания: ' + (behavior.hesitationIndex != null ? behavior.hesitationIndex.toFixed(1) : '—') + '<br>Стабильность: ' + (behavior.responseStabilityIndex != null ? behavior.responseStabilityIndex.toFixed(1) : '—') + '<br>Пропуски: ' + (behavior.skipTendency != null ? behavior.skipTendency.toFixed(1) + '%' : '—') + '</td>' +
+        '<td>' + btn + '</td>';
+      body.appendChild(tr);
+    });
+
+    body.querySelectorAll('button[data-player-id]').forEach(btn=>{
+      btn.onclick = ()=>{
+        const player = (data.players || []).find(p=>p.playerId === btn.getAttribute('data-player-id'));
+        renderHrPlayerDetail(player);
+      };
+    });
+
+    if ((data.players || []).length){ renderHrPlayerDetail(data.players[0]); }
+    else { hrSelectedPlayerId = null; $('hrViewToggle').style.display = 'none'; $('hrAiWrap').classList.remove('show'); }
+  }
+
+
+
+  function setHrView(view){
+    hrActiveView = view === 'ai' ? 'ai' : 'dashboard';
+    const dashBtn = $('btnViewDashboard');
+    const aiBtn = $('btnViewAi');
+    if (dashBtn) dashBtn.classList.toggle('active', hrActiveView === 'dashboard');
+    if (aiBtn) aiBtn.classList.toggle('active', hrActiveView === 'ai');
+    if (dashBtn) dashBtn.classList.toggle('ghost', hrActiveView !== 'dashboard');
+    if (aiBtn) aiBtn.classList.toggle('ghost', hrActiveView !== 'ai');
+    $('hrPlayerDetailWrap').style.display = hrActiveView === 'dashboard' && hrSelectedPlayerId ? 'grid' : 'none';
+    $('hrAiWrap').classList.toggle('show', hrActiveView === 'ai' && !!hrSelectedPlayerId);
+  }
+
+  function fillAiLists(id, items){
+    const box = $(id);
+    box.innerHTML = '';
+    (items || []).forEach(item=>{
+      const li = document.createElement('li');
+      li.textContent = item;
+      box.appendChild(li);
+    });
+    if (!box.children.length){
+      const li = document.createElement('li');
+      li.textContent = '—';
+      box.appendChild(li);
+    }
+  }
+
+  function normalizeAiReport(report, fallbackPlayer){
+    const src = report && report.analysisJson ? report.analysisJson : (report || {});
+    const player = fallbackPlayer || {};
+    return {
+      fit: src.fit || 'Требуется дополнительная оценка',
+      fitSub: src.fitSub || 'ИИ-вывод сформирован на основе игровых и поведенческих сигналов.',
+      confidence: src.confidence || '—',
+      primaryTrack: src.primaryTrack || player.primaryInternshipTrackLabel || player.primaryInternshipTrack || '—',
+      primaryTrackSub: src.primaryTrackSub || player.internshipDecisionLabel || '—',
+      altTracks: Array.isArray(src.altTracks) && src.altTracks.length ? src.altTracks : (Array.isArray(player.alternativeInternshipTracks) ? player.alternativeInternshipTracks.map(t=>t.trackLabel || t.trackKey || '').filter(Boolean) : []),
+      primaryRole: src.primaryRole || player.primaryRecommendedRole || player.recommendedProfession || '—',
+      primaryRoleSub: src.primaryRoleSub || player.roleRecommendationSummary || '—',
+      altRoles: Array.isArray(src.altRoles) && src.altRoles.length ? src.altRoles : (Array.isArray(player.alternativeRecommendedRoles) ? player.alternativeRecommendedRoles : []),
+      summary: src.summary || '—',
+      strengths: Array.isArray(src.strengths) ? src.strengths : [],
+      risks: Array.isArray(src.risks) ? src.risks : [],
+      interview: Array.isArray(src.interview) ? src.interview : [],
+      caveats: src.caveats || '—'
+    };
+  }
+
+  function setAiStatus(kind, text){
+    const el = $('hrAiStatus');
+    el.className = 'ai-status ' + kind;
+    el.textContent = text;
+  }
+
+  function clearHrAiProgress(){
+    if (hrAiProgressTimer){
+      clearInterval(hrAiProgressTimer);
+      hrAiProgressTimer = null;
+    }
+  }
+
+  function renderAiSteps(activeIndex, progress){
+    $('hrAiProgressBar').style.width = Math.max(0, Math.min(100, progress)) + '%';
+    const box = $('hrAiSteps');
+    box.innerHTML = '';
+    AI_LOADING_STEPS.forEach((step, idx)=>{
+      const div = document.createElement('div');
+      div.className = 'ai-step' + (idx < activeIndex ? ' done' : idx === activeIndex ? ' active' : '');
+      div.innerHTML = '<b>' + escapeHtml(step.title) + '</b><div class="muted" style="margin-top:6px">' + escapeHtml(step.text) + '</div>';
+      box.appendChild(div);
+    });
+  }
+
+  function renderAiReport(report, fallbackPlayer){
+    const normalized = normalizeAiReport(report, fallbackPlayer);
+    $('hrAiReportGrid').style.display = 'block';
+    $('hrAiFit').textContent = normalized.fit;
+    $('hrAiFitSub').textContent = normalized.fitSub;
+    $('hrAiConfidence').textContent = normalized.confidence;
+    $('hrAiPrimaryTrack').textContent = normalized.primaryTrack;
+    $('hrAiPrimaryTrackSub').textContent = normalized.primaryTrackSub;
+    $('hrAiPrimaryRole').textContent = normalized.primaryRole;
+    $('hrAiPrimaryRoleSub').textContent = normalized.primaryRoleSub;
+    $('hrAiAltTracks').textContent = normalized.altTracks.join(' · ') || '—';
+    $('hrAiAltRoles').textContent = normalized.altRoles.join(' · ') || '—';
+    $('hrAiSummary').textContent = normalized.summary;
+    fillAiLists('hrAiStrengths', normalized.strengths);
+    fillAiLists('hrAiRisks', normalized.risks);
+    fillAiLists('hrAiInterview', normalized.interview);
+    $('hrAiCaveats').textContent = normalized.caveats;
+  }
+
+  async function fetchAiReport(playerId){
+    const res = await fetch('/api/room/' + roomCode + '/player/' + playerId + '/ai-report');
+    if (!res.ok) throw new Error('ai report fetch failed');
+    return await res.json();
+  }
+
+  async function generateAiReport(playerId){
+    const res = await fetch('/api/room/' + roomCode + '/player/' + playerId + '/ai-report/generate', { method:'POST' });
+    const data = await res.json().catch(()=>({ ok:false, error:'bad json' }));
+    if (!res.ok || !data.ok){
+      const err = new Error(data?.error || 'ai report generate failed');
+      err.payload = data;
+      throw err;
+    }
+    return data;
+  }
+
+  function startAiProgress(playerName){
+    clearHrAiProgress();
+    $('hrAiReportGrid').style.display = 'none';
+    $('hrAiProgressPanel').classList.add('show');
+    $('hrAiSubtitle').textContent = 'Готовим AI-рекомендации для ' + (playerName || 'игрока') + '. Сначала собираются игровые и поведенческие сигналы.';
+    setAiStatus('loading', 'загрузка');
+    let progress = 8;
+    let active = 0;
+    renderAiSteps(active, progress);
+    hrAiProgressTimer = setInterval(()=>{
+      progress = Math.min(88, progress + (progress < 40 ? 8 : progress < 70 ? 5 : 3));
+      active = Math.min(AI_LOADING_STEPS.length - 1, Math.floor(progress / 25));
+      renderAiSteps(active, progress);
+    }, 350);
+  }
+
+  function finishAiProgress(){
+    clearHrAiProgress();
+    renderAiSteps(AI_LOADING_STEPS.length - 1, 100);
+    setAiStatus('ready', 'загружено');
+  }
+
+  async function loadExistingAiReport(player){
+    $('hrAiSubtitle').textContent = 'Для ' + (player.playerName || 'игрока') + ' можно запросить отдельный AI-слой поверх базового дашборда.';
+    $('hrAiProgressPanel').classList.remove('show');
+    $('hrAiReportGrid').style.display = 'none';
+    setAiStatus('empty', 'проверка');
+    try{
+      const res = await fetchAiReport(player.playerId);
+      if (res.status === 'ready' && res.data){
+        setAiStatus('ready', 'загружено');
+        $('hrAiSubtitle').textContent = 'AI-экспертиза уже сохранена для ' + (player.playerName || 'игрока') + ' и привязана к текущему профилю.';
+        renderAiReport(res.data, player);
+      }else if (res.status === 'error' && res.data){
+        setAiStatus('error', 'ошибка');
+        $('hrAiSubtitle').textContent = 'Последняя попытка AI-экспертизы завершилась ошибкой. Можно перезапустить генерацию.';
+        renderAiReport(res.data, player);
+      }else{
+        setAiStatus('empty', 'не загружено');
+      }
+    }catch(err){
+      console.error(err);
+      setAiStatus('error', 'ошибка');
+      $('hrAiSubtitle').textContent = 'Не удалось получить сохранённую AI-экспертизу. Можно повторить запрос.';
+    }
+  }
+
+  async function runAiGeneration(player, forceRefresh){
+    startAiProgress(player.playerName || 'игрока');
+    try{
+      const res = await generateAiReport(player.playerId);
+      finishAiProgress();
+      $('hrAiProgressPanel').classList.remove('show');
+      $('hrAiSubtitle').textContent = 'Экспертный AI-слой сформирован для ' + (player.playerName || 'игрока') + ' и привязан к текущему профилю.';
+      renderAiReport(res.data, player);
+      toast(forceRefresh ? 'AI-экспертиза обновлена' : 'AI-экспертиза загружена');
+    }catch(err){
+      console.error(err);
+      clearHrAiProgress();
+      $('hrAiProgressPanel').classList.remove('show');
+      const payload = err && err.payload && err.payload.data ? err.payload.data : null;
+      setAiStatus('error', 'ошибка');
+      $('hrAiSubtitle').textContent = 'Не удалось сформировать AI-экспертизу для ' + (player.playerName || 'игрока') + '.';
+      if (payload) renderAiReport(payload, player);
+      else renderAiReport({ analysisJson:{ fit:'Ошибка генерации', fitSub:String(err.message || 'Неизвестная ошибка'), confidence:'0%', primaryTrack:'—', primaryTrackSub:'—', primaryRole:'—', primaryRoleSub:'—', altTracks:[], altRoles:[], summary:String(err.message || 'Не удалось получить ответ от ИИ'), strengths:[], risks:[], interview:[], caveats:'Проверьте GEMINI_API_KEY, доступ к сети и корректность данных игрока.' } }, player);
+      toast('Ошибка AI-экспертизы');
+    }
+  }
+
+  function renderHrAiPanel(player, forceStart){
+    if (!player) return;
+    if (forceStart){
+      runAiGeneration(player, true);
+      return;
+    }
+    loadExistingAiReport(player).catch(err=>console.error(err));
+  }
+
+  function installHrAiHandlers(){
+    const dashBtn = $('btnViewDashboard');
+    const aiBtn = $('btnViewAi');
+    const genBtn = $('btnAiGenerate');
+    const refBtn = $('btnAiRefresh');
+    if (dashBtn) dashBtn.onclick = ()=> setHrView('dashboard');
+    if (aiBtn) aiBtn.onclick = ()=> {
+      setHrView('ai');
+      const player = (adminDashboardData?.players || []).find(p => p.playerId === hrSelectedPlayerId);
+      if (player) renderHrAiPanel(player, false);
+    };
+    if (genBtn) genBtn.onclick = ()=> {
+      const player = (adminDashboardData?.players || []).find(p => p.playerId === hrSelectedPlayerId);
+      if (player){ setHrView('ai'); runAiGeneration(player, false); }
+    };
+    if (refBtn) refBtn.onclick = ()=> {
+      const player = (adminDashboardData?.players || []).find(p => p.playerId === hrSelectedPlayerId);
+      if (player){ setHrView('ai'); runAiGeneration(player, true); }
+    };
   }
 
   function onMessage(ev){
     const m = JSON.parse(ev.data);
 
-    if (m.type === 'error'){
-      toast(m.message || 'Ошибка');
-      return;
-    }
+    if (m.type === 'error'){ toast(m.message || 'Ошибка'); return; }
 
     if (m.type === 'room_created'){
       roomCode = m.roomCode;
@@ -654,14 +1350,9 @@
       setStatus('lobby');
       $('btnStart').style.display = 'inline-flex';
       $('btnEnd').style.display = 'inline-flex';
-
-      // Если сервер вернул режим фильтра, применяем его
-      if (typeof m.taskFilterMode === 'string'){
-        applyTaskFilterFromRoom(m.taskFilterMode);
-      }else{
-        applyTaskFilterFromRoom(taskFilterMode);
-      }
-
+      applyAssessmentConfigFromRoom(m.assessmentMode, m.blockConfig);
+      applyWaitModeFromRoom(m.waitForAllPlayers);
+      $('hrDashboard').style.display = 'none';
       toast('Комната создана: ' + roomCode);
       return;
     }
@@ -675,17 +1366,25 @@
       updatePlayers(m.players || []);
       $('btnStart').style.display = 'inline-flex';
       $('btnEnd').style.display = 'inline-flex';
-
-      if (typeof m.taskFilterMode === 'string'){
-        applyTaskFilterFromRoom(m.taskFilterMode);
-      }
-
+      applyAssessmentConfigFromRoom(m.assessmentMode, m.blockConfig);
+      applyWaitModeFromRoom(m.waitForAllPlayers);
       toast('Подключено к комнате ' + roomCode);
+      if ((m.status || '') === 'finished'){
+        fetchAdminDashboard().then(renderAdminDashboard).catch(err=>{ console.error(err); toast('Не удалось загрузить HR-дашборд'); });
+        $('export').style.display = 'block';
+      }
       return;
     }
 
     if (m.type === 'players'){
       updatePlayers(m.players || []);
+      if (Object.prototype.hasOwnProperty.call(m, 'waitForAllPlayers')) applyWaitModeFromRoom(m.waitForAllPlayers);
+      return;
+    }
+
+    if (m.type === 'room_settings'){
+      applyWaitModeFromRoom(m.waitForAllPlayers);
+      toast(waitForAllPlayers ? 'Режим ожидания игроков включён' : 'Режим ожидания игроков выключен');
       return;
     }
 
@@ -694,6 +1393,7 @@
       $('live').style.display = 'block';
       $('reveal').style.display = 'none';
       $('export').style.display = 'none';
+      $('hrDashboard').style.display = 'none';
       toast('Сессия началась');
       return;
     }
@@ -708,9 +1408,16 @@
 
       const mode = m.mode || 'base';
       const subtype = m.subtype || null;
-
       const mp = $('modePill');
+      const bp = $('blockPill');
+      const il = $('instrumentLabel');
       const sl = $('subtypeLabel');
+
+      if (m.block){ bp.style.display = 'inline-flex'; bp.textContent = 'Блок: ' + m.block; }
+      else{ bp.style.display = 'none'; }
+
+      if (m.instrument){ il.style.display = 'inline'; il.textContent = 'Методика: ' + m.instrument; }
+      else{ il.style.display = 'none'; }
 
       if (mode === 'card'){
         mp.style.display = 'inline-flex';
@@ -724,8 +1431,14 @@
           case 'cube_nets_select': subtypeText = 'Развёртки куба'; break;
           case 'graph_match_trend': subtypeText = 'Сопоставление графиков и тренда'; break;
           case 'route_min_steps': subtypeText = 'Маршрут по сетке'; break;
-          case 'balance_relations': subtypeText = 'Отношения масс фигур'; break;
+          case 'shapes_equation': subtypeText = 'Уравнение с фигурами'; break;
           case 'pattern_matrix': subtypeText = 'Матрица закономерностей'; break;
+          case 'shape_rotation_match': subtypeText = 'Мысленное вращение фигур'; break;
+          case 'cube_fold_result': subtypeText = 'Сгибание развёртки'; break;
+          case 'mirror_transform_path': subtypeText = 'Зеркальное преобразование'; break;
+          case 'symbol_rule_matrix': subtypeText = 'Абстрактная матрица правил'; break;
+          case 'analogy_chain': subtypeText = 'Цепочка аналогий'; break;
+          case 'operator_sequence': subtypeText = 'Последовательность операторов'; break;
           default: subtypeText = 'Когнитивная карточка';
         }
         sl.style.display = 'inline';
@@ -745,13 +1458,13 @@
 
     if (m.type === 'reveal'){
       $('reveal').style.display = 'block';
-
       const mode = m.mode || 'base';
       const titleParts = [];
       titleParts.push('Раунд ' + m.round + '. Категория: ' + (m.category || ''));
-      if (mode === 'card'){
-        titleParts.push('Тип: когнитивная карточка');
-      }
+      if (m.block) titleParts.push('Блок: ' + m.block);
+      if (m.instrument) titleParts.push('Методика: ' + m.instrument);
+      if (mode === 'card') titleParts.push('Тип: когнитивная карточка');
+      else if (m.responseModel === 'survey') titleParts.push('Тип: ЭМП-опрос');
       $('revealTitle').textContent = titleParts.join(' · ');
 
       const tbody = $('tableResults').querySelector('tbody');
@@ -759,22 +1472,20 @@
       (m.results || []).forEach(r=>{
         const tr = document.createElement('tr');
         const name = escapeHtml(r.name || '');
-        let ans = (r.text || '').trim();
-        if (m.qtype === 'mcq'){
-          const opts = m.options || [];
-          if (r.choice != null && opts[r.choice] != null){
-            ans = opts[r.choice];
-          }else ans = '—';
-        }
-        const isCorrect = r.isCorrect ? 'Да' : 'Нет';
-        const awarded = r.awarded || 0;
+        const ans = formatAdminAnswer(r, m);
+        const statusText = m.responseModel === 'survey' ? (r.statusText || ((ans !== '—') ? 'получен' : 'нет ответа')) : (r.statusText || (r.isCorrect ? 'верно' : ((Number(r.partialCredit || 0) > 0) ? 'частично верно' : 'неверно')));
+        const awarded = formatScore(r.awarded || 0);
         const time = r.timeMs != null ? r.timeMs : '';
+        const partial = r.partialCredit != null ? Number(r.partialCredit).toFixed(2) : '—';
+        const behavior = [r.responseQuality || '', r.errorPattern || ''].filter(Boolean).join(' · ') || '—';
 
         tr.innerHTML =
           '<td>' + name + '</td>' +
           '<td>' + escapeHtml(ans) + '</td>' +
-          '<td>' + isCorrect + '</td>' +
+          '<td>' + escapeHtml(statusText) + '</td>' +
           '<td>' + awarded + '</td>' +
+          '<td>' + partial + '</td>' +
+          '<td>' + escapeHtml(behavior) + '</td>' +
           '<td>' + time + '</td>';
         tbody.appendChild(tr);
       });
@@ -786,7 +1497,6 @@
         li.innerHTML = '<span class="pill-chip">' + escapeHtml(s.name || '') + '</span> — ' + (s.score || 0);
         scoreList.appendChild(li);
       });
-
       return;
     }
 
@@ -797,10 +1507,17 @@
       toast('Сессия завершена');
       if (roomCode){
         $('dlRoom').href = '/api/export/' + roomCode + '/room.csv';
+        $('dlHrCsv').href = '/api/export/' + roomCode + '/hr-report.csv';
+        $('dlHrJson').href = '/api/export/' + roomCode + '/hr-report.json';
+        fetchAdminDashboard().then(renderAdminDashboard).catch(err=>{
+          console.error(err);
+          toast('Не удалось загрузить HR-дашборд');
+        });
       }
       return;
     }
   }
+  installHrAiHandlers();
 </script>
 </body>
 </html>
