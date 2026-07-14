@@ -1,7 +1,1 @@
-sk-c43615dc1ef54b9a94e9d673502b6f70
-
-sk-dc25152cdeea48b1a63fa463ce6a6835
-
-gemini:
-AIzaSyAC3ls1OdOMVvZGhMUVKgqfdoNc1YpDc9o
-AIzaSyCG2Xl4VWjbKHgLMXPeAV6bNQZeFygonO8
+Your own *secret* Gemini/OpenAI/etc API key

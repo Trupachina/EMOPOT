@@ -58,7 +58,7 @@ def _load_simple_env(path: Path) -> Dict[str, str]:
 
 _DOTENV = _load_simple_env(APP_DIR / ".env")
 AI_PROMPT_CONFIG_PATH = APP_DIR / "ai_prompt_config.json"
-GEMINI_API_KEY_INLINE = ""
+GEMINI_API_KEY_INLINE = "Your own *secret* Gemini/OpenAI/etc API key"
 GEMINI_MODEL_INLINE = ""
 GEMINI_API_KEY = (GEMINI_API_KEY_INLINE or os.getenv("GEMINI_API_KEY") or _DOTENV.get("GEMINI_API_KEY") or "").strip()
 GEMINI_MODEL = (GEMINI_MODEL_INLINE or os.getenv("GEMINI_MODEL") or _DOTENV.get("GEMINI_MODEL") or "gemini-2.5-flash").strip() or "gemini-2.5-flash"
@@ -887,6 +887,37 @@ def _partial_credit_cube_nets_select(ans_text: str, q: dict) -> Tuple[float, str
     return 0.0, "rule_misunderstood"
 
 
+def _partial_credit_route_min_steps(ans_text: str, q: dict) -> Tuple[float, str]:
+    """Даёт частичный балл за близкий расчёт минимального маршрута по сетке."""
+    nums = re.findall(r"-?\d+", str(ans_text or ""))
+    if not nums:
+        return 0.0, "unfinished_solution"
+    try:
+        answer = int(nums[0])
+    except Exception:
+        return 0.0, "rule_misunderstood"
+
+    accepted = q.get("accept") or []
+    try:
+        target = int(float(str(accepted[0]).replace(",", ".")))
+    except Exception:
+        return 0.0, "rule_misunderstood"
+
+    diff = abs(answer - target)
+    partial_cfg = q.get("partialScoring") if isinstance(q.get("partialScoring"), dict) else {}
+
+    def _pc(key: str, default: float) -> float:
+        return round(_clamp(_safe_float(partial_cfg.get(key, default), default), 0.0, 1.0), 2)
+
+    if diff == 1:
+        return _pc("plus_one_step", 0.75), "near_miss"
+    if 2 <= diff <= 3:
+        return _pc("plus_two_or_three_steps", 0.5), "partial_correct"
+    if 4 <= diff <= 6:
+        return _pc("clearly_suboptimal", 0.25), "suboptimal_route"
+    return 0.0, "planning_gap"
+
+
 def evaluate_player_response(q: dict, ans_text: str, ans_choice: Optional[int], interaction_summary: Optional[dict], *, answered: bool, timed_out: bool = False, disconnected: bool = False) -> dict:
     interaction_summary = interaction_summary or {}
     manual_skip = bool(interaction_summary.get("manualSkip"))
@@ -951,6 +982,10 @@ def evaluate_player_response(q: dict, ans_text: str, ans_choice: Optional[int], 
             partial_credit, error_pattern = _partial_credit_word_ladder(ans_text)
     elif mode == "card" and subtype == "clock_equal_sums":
         ok, partial_credit, error_pattern, status_text_override = _evaluate_clock_equal_sums_partial(ans_text, q)
+    elif mode == "card" and subtype == "route_min_steps":
+        ok = _is_correct_text(ans_text, q.get("accept", []))
+        if not ok:
+            partial_credit, error_pattern = _partial_credit_route_min_steps(ans_text, q)
     elif mode == "card" and subtype == "planets_select":
         selected = set(_parse_int_set(ans_text))
         correct = set(_extract_correct_planet_set(q))
@@ -2295,7 +2330,7 @@ def _build_ai_payload(room_code: str, player_id: str) -> dict:
 
     return {
         "project": "EMOPOT",
-        "task": "Сделай экспертную HR-интерпретацию результатов игрока строго по заданной JSON-схеме. Используй уже рассчитанный rule-based блок internshipRouting как основной источник по стажировочному треку, gap-analysis, готовности и HR-решению; не подменяй его произвольным выводом.",
+        "task": "Сделай экспертную HR-интерпретацию результатов игрока строго по заданной JSON-схеме. Используй rule-based блок internshipRouting как источник по стажировочному треку, готовности, дефицитам и HR-решению, но обязательно сохрани полноценную рекомендацию: рекомендуемая профессия/роль, альтернативные роли, причины выбора, осторожность вывода и конкретные следующие действия для HR. Не заменяй рекомендацию простым перечислением треков.",
         "roomCode": room_code,
         "playerId": player_id,
         "profile": profile,
@@ -5276,6 +5311,18 @@ def export_hr_report_json(code: str):
         headers={"Content-Disposition": f'attachment; filename="{code}_hr_report.json"'},
     )
 
+
+
+@app.get("/api/export/{code}/hr-report.html")
+def export_hr_report_html(code: str):
+    code = code.upper()
+    dashboard = build_and_store_reports(code)
+    html_text = build_hr_html_report(dashboard)
+    return Response(
+        html_text,
+        media_type="text/html; charset=utf-8",
+        headers={"Content-Disposition": f'attachment; filename="{code}_hr_report.html"'},
+    )
 
 
 @app.get("/api/export/{code}/player/{player_id}/profile.json")
